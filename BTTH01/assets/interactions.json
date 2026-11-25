@@ -1,0 +1,22 @@
+[
+  {
+    "name": "desktop",
+    "test": "hover",
+    "text": "GIỚI THIỆU\nChiến lược phát triển\nCơ cấu tổ chức\nThông tin công khai"
+  },
+  {
+    "name": "desktop",
+    "test": "news next click",
+    "result": "click completed; no assertion of slide change"
+  },
+  {
+    "name": "mobile",
+    "test": "menu + summary",
+    "open": true
+  },
+  {
+    "name": "mobile",
+    "test": "close",
+    "transform": "none"
+  }
+]
