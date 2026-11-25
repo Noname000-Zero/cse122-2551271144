@@ -1,6 +1,6 @@
 # Kiểm tra và rà soát BTTH01
 
-Ngày 25/11/2026 (Asia/Saigon). AI đã sửa và kiểm tra tài liệu theo yêu cầu của Hà; **chưa có xác nhận Hà đã giải thích hay nghiệm thu**. Chưa stage, commit, push.
+Ngày 25/11/2026 (Asia/Saigon). AI đã sửa và kiểm tra tài liệu theo yêu cầu của Hà; **chưa có xác nhận Hà đã giải thích hay nghiệm thu**. Đã commit và push bài lên main; tiếp tục kiểm tra xuất bản theo yêu cầu mới.
 
 ## Đối chiếu 15 phần của master prompt
 
@@ -24,13 +24,13 @@ Ngày 25/11/2026 (Asia/Saigon). AI đã sửa và kiểm tra tài liệu theo y�
 
 ## Phép kiểm tra đã chạy
 
-- Markdown: code fence cân bằng, link tệp tương đối tồn tại, đủ 15 anchor mục lục. Kiểm tra tĩnh, chưa xem render GitHub trực tuyến.
+- Markdown: code fence cân bằng, link tệp tương đối tồn tại, đủ 15 anchor mục lục. Đã kiểm tra tĩnh và mở bản render GitHub không đăng nhập; lần đầu phát hiện phần lặp, đang kiểm tra lại bản sửa.
 - Cấu trúc: phân tích 23 đoạn HTML minh họa bằng DOMParser trong Edge headless; section có heading, form có input có name và nút submit, input có label, ul có các con li. Đây là kiểm tra có mục tiêu, không thay thế trình kiểm chuẩn HTML toàn diện.
 - Cây toàn trang ghép từ ví dụ: đúng 1 main, không có main lồng main, không có id trùng.
 - CSS tính toán của ví dụ ở viewport mặc định 1280×720: ba vùng topic-grid đều có 4 items và 4 cột (308px/cột); gallery grid-column `2 / span 3`, grid-row `span 2`; event-date absolute và event-media relative.
 - Nested Flexbox của ví dụ: units-content, units-list, units-preview, nav-list và nav-link đều có computed display:flex.
 - So sánh SHA-256 trước/sau sửa: toàn bộ 11 tệp trong assets giữ nguyên byte. Không ghi lại ảnh, DOM hay JSON khảo sát gốc.
-- Git: working tree chỉ có thư mục BTTH01 chưa theo dõi; diff các tệp tracked trống, bài cũ không bị sửa.
+- Git trước commit: chỉ BTTH01 mới; commit bài 9e3be23 chỉ chứa BTTH01, không sửa bài cũ.
 
 ## Giới hạn giữ nguyên
 

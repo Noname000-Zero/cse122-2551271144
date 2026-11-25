@@ -159,11 +159,7 @@ Viewport mobile đo scrollWidth=390, không tràn ngang ở trạng thái ban đ
 
 ## 12. DOM tree toàn trang
 
-Hai cây dưới đây là DOM **đề xuất** đầy đủ theo các ví dụ; không phải DOM website gốc. Mỗi vùng chính được mở rộng riêng; news-card nằm trong các chuyên mục, search-form nằm ở header/drawer, event-card nằm ở events. Cây div thay toàn bộ thẻ để học hộp nên không còn ngữ nghĩa hay tương tác.
-
-### DOM chỉ dùng div
-
-Hai cây dưới đây là DOM **đề xuất** đầy đủ theo các ví dụ; không phải DOM website gốc. Mỗi vùng chính được mở rộng riêng; news-card nằm trong các chuyên mục, search-form nằm ở header/drawer, event-card nằm ở events. Cây div thay toàn bộ thẻ để học hộp nên không còn ngữ nghĩa hay tương tác.
+Hai cây là DOM đề xuất theo ví dụ, không phải DOM TLU gốc. Liệt kê đủ mọi vùng chính; các component tin, tìm kiếm và sự kiện được mở rộng ở đúng vùng cha.
 
 ### DOM chỉ dùng div
 
@@ -874,7 +870,7 @@ body.page
 - [x] Đọc master prompt, đủ 15 phần và 23 mục component, mỗi mục 7 bước.
 - [x] Phân biệt nguồn gốc, đề xuất và điều chưa xác nhận.
 - [x] Có screenshot, DOM/CSS và log thao tác hai viewport.
-- [ ] Chưa xem bản render GitHub trực tuyến; kiểm tra tĩnh Markdown local.
+- [x] Đã mở bản render GitHub bằng phiên không đăng nhập; phát hiện và sửa phần lặp. Kết quả kiểm tra lại ghi tại KIEM_TRA.md.
 - [ ] Các tương tác chưa xác nhận đã nêu ở phần căn cứ; không coi là đạt.
 
 Cây quyết định: khoanh hộp → đặt tên theo vai trò → xác định cha/con → cần hàng và cột đồng bộ? Grid → chỉ một trục? Flex → xếp dọc tự nhiên? Flow → phủ lên vùng khác? Position với mốc rõ → nhận diện nội dung → chọn thẻ → kiểm tra màn hình hẹp và bàn phím.
@@ -903,68 +899,6 @@ Trước nộp: tự giải thích tại sao main block vẫn có class flex-1; 
 
 Đã xem ảnh desktop toàn trang, mobile toàn trang và menu mobile. Mobile: thống kê có chỉ số đầu riêng, các chỉ số còn lại thành hai cột; đơn vị chuyển thành khối dọc; logo đối tác thấy hai logo tại thời điểm chụp; footer xếp dọc. Một số ảnh thẻ chuyên mục mobile còn là nền trống dù đã cuộn và chờ: chưa xác nhận nguyên nhân, không coi nền trống là thiết kế gốc. Chưa kiểm chứng tablet và trình đọc màn hình.
 
-Trạng thái: chỉ có BTTH01 là thư mục mới; không sửa bài cũ. Chưa stage, commit hay push theo yêu cầu xem trước của Hà.| Component / Layout Box | Layout technique, container và items | Nội dung | HTML semantic chính |
-|---|---|---|---|
-| page | Normal Flow | Toàn trang | body, header, h1, main, section, h2, p, footer |
-| site-header | Flex: header-tools → brand, form, language, menu-open | Nhận diện và công cụ | header, div, a, img, form, label, input, button, nav, ul, li |
-| search-form | Flow + Position: field relative → submit absolute | Tìm kiếm | form, label, div, input, button |
-| primary-nav | Nested Flex: nav-list → li; nav-link → span | Điều hướng desktop | nav, ul, li, a, span |
-| mobile-drawer | Fixed; heading Flex → h2, button | Menu mobile | aside, div, h2, button, form, label, input, nav, details, summary, ul, li, a |
-| hero | Relative frame → absolute pagination; Flex → button | Banner đầu trang | section, h2, div, img, button |
-| news-layout | Grid news-columns: featured, stack, aside | Tin tức và thông báo | section, h2, div, article, img, h3, a, p, time, aside, ul, li |
-| news-card | Normal Flow | Thẻ tin | article, img, div, h3, a, p, time |
-| announcements | Normal Flow | Danh sách thông báo | aside, h2, ul, li, a, time |
-| events | Flex events-track → event-card; nowrap | Sự kiện | section, h2, div, article, img, time, h3, a |
-| event-card | Relative event-media → absolute event-date | Thẻ sự kiện | article, div, img, time, h3, a |
-| statistics | Grid statistics-grid → stat-item | Những con số ấn tượng | section, h2, dl, div, dt, dd |
-| identity-banner | Normal Flow | Banner thông điệp | figure, img, figcaption |
-| admissions | Grid admissions-grid → img, body | Tuyển sinh | section, div, img, h2, p, ul, li, a |
-| audiences | Grid → 3 section | Đào tạo / Sinh viên / Cựu sinh viên | div, section, h2, article, img, h3, a, p, time |
-| units | Nested Flex: content → list, preview; mỗi con Flex | Các đơn vị đào tạo, KHCN | section, h2, div, nav, a, figure, img, figcaption |
-| international | Grid topic-grid → 3 article + ul | Hợp tác quốc tế | section, h2, div, article, img, h3, a, p, time, ul, li |
-| research | Grid topic-grid → 3 article + ul | Nghiên cứu | section, h2, div, article, img, h3, a, p, time, ul, li |
-| partners | Flex partner-list → li; wrap | Mạng lưới đối tác | section, h2, p, ul, li, img |
-| community | Grid topic-grid → 3 article + ul | Vì cộng đồng | section, h2, div, article, img, h3, a, p, time, ul, li |
-| moments | Grid moments-grid; feature span 3 × 2 | Khoảnh khắc TLU | section, h2, div, button, img |
-| site-footer | Grid footer-columns → address, nav, nav, section | Chân trang | footer, div, address, br, a, nav, h2, ul, li, section, p, button |
-| social-rail | Fixed + Flex column → a | Liên kết mạng xã hội nổi | nav, a |
+Trạng thái xuất bản: đã push bài lên nhánh `main`. Lỗi lặp phần 14–15 và tiêu đề DOM được phát hiện khi mở GitHub và đã sửa trong lần xuất bản này. Hà chưa xác nhận nghiệm thu.
 
-<a id="phan-14"></a>
-
-## 14. Checklist tư duy cho sinh viên
-
-- [x] Đọc master prompt, đủ 15 phần và 23 mục component, mỗi mục 7 bước.
-- [x] Phân biệt nguồn gốc, đề xuất và điều chưa xác nhận.
-- [x] Có screenshot, DOM/CSS và log thao tác hai viewport.
-- [ ] Chưa xem bản render GitHub trực tuyến; kiểm tra tĩnh Markdown local.
-- [ ] Các tương tác chưa xác nhận đã nêu ở phần căn cứ; không coi là đạt.
-
-Cây quyết định: khoanh hộp → đặt tên theo vai trò → xác định cha/con → cần hàng và cột đồng bộ? Grid → chỉ một trục? Flex → xếp dọc tự nhiên? Flow → phủ lên vùng khác? Position với mốc rõ → nhận diện nội dung → chọn thẻ → kiểm tra màn hình hẹp và bàn phím.
-
-Trước nộp: tự giải thích tại sao main block vẫn có class flex-1; vì sao ảnh + ngày phủ dùng relative/absolute; vì sao button không thay bằng div.
-
-<a id="phan-15"></a>
-
-## 15. Các lỗi tư duy phổ biến cần tránh
-
-1. Nhìn ảnh rồi kết luận CSS gốc dùng Flexbox. Phải đo computed style.
-2. Nhầm flex item với flex container, hoặc coi mọi phần tử cháu là item trực tiếp.
-3. Dùng absolute cho toàn bộ trang làm vỡ luồng khi văn bản dài.
-4. Dùng flex-wrap cho gallery cần span hàng/cột.
-5. Gọi mọi vùng là div, bỏ heading, list, time và form.
-6. Chọn button cho link chuyển trang hoặc div cho nút.
-7. Dùng màu/vị trí đặt class thay vì vai trò.
-8. Xem snapshot ban đầu 0 là thống kê chính thức, bỏ qua cuộn/animation.
-9. Click thành công rồi tuyên bố carousel chuyển đúng mà chưa đo trạng thái.
-10. Coi screenshot full-page là bằng chứng mọi ảnh đã tải hoặc mọi sticky đúng vị trí.
-11. Ghi đã kiểm thử tablet, GitHub, tìm kiếm khi chưa chạy.
-12. Sao chép ví dụ placeholder làm sản phẩm cuối mà không bổ sung alt, label, heading, nội dung thật.
-
-
-## Ghi chú kiểm tra ảnh và bàn giao
-
-Đã xem ảnh desktop toàn trang, mobile toàn trang và menu mobile. Mobile: thống kê có chỉ số đầu riêng, các chỉ số còn lại thành hai cột; đơn vị chuyển thành khối dọc; logo đối tác thấy hai logo tại thời điểm chụp; footer xếp dọc. Một số ảnh thẻ chuyên mục mobile còn là nền trống dù đã cuộn và chờ: chưa xác nhận nguyên nhân, không coi nền trống là thiết kế gốc. Chưa kiểm chứng tablet và trình đọc màn hình.
-
-Trạng thái: chỉ có BTTH01 là thư mục mới; không sửa bài cũ. Chưa stage, commit hay push theo yêu cầu xem trước của Hà.
-
-[Hồ sơ rà soát](KIEM_TRA.md) ghi đối chiếu 15 đầu ra, phép kiểm tra đã chạy và giới hạn còn lại.
+[Hồ sơ rà soát và kiểm tra GitHub](KIEM_TRA.md).
