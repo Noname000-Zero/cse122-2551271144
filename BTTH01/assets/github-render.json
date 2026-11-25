@@ -1,0 +1,209 @@
+{
+  "date": "2026-11-25",
+  "anonymous": true,
+  "viewport": "1440x1000",
+  "checkedContentCommit": "d5e2413",
+  "pages": {
+    "README.md": {
+      "status": 200,
+      "tables": 2,
+      "blocks": 5,
+      "headings": [
+        "Mục lục",
+        "Căn cứ và mức xác nhận",
+        "1. Bản đồ bố cục toàn trang",
+        "2. Phân tích từng component",
+        "3. Layout Box + tên class",
+        "4. Flexbox/Grid/Block/Position",
+        "5. Flex Container + Flex Items",
+        "6. Kiểu nội dung bên trong",
+        "7. HTML semantic phù hợp",
+        "8. Phiên bản chỉ dùng div",
+        "9. Phiên bản semantic HTML",
+        "10. CSS layout minh họa",
+        "11. Responsive behavior",
+        "12. DOM tree toàn trang",
+        "13. Bảng tổng hợp",
+        "14. Checklist tư duy cho sinh viên",
+        "15. Các lỗi tư duy phổ biến cần tránh",
+        "Ghi chú kiểm tra ảnh và bàn giao"
+      ],
+      "inlineImages": [
+        {
+          "loaded": true,
+          "src": "https://github.com/Noname000-Zero/cse122-2551271144/raw/main/BTTH01/assets/mobile-menu.png"
+        }
+      ],
+      "domTrees": [
+        {
+          "characters": 9831,
+          "hasHero": true,
+          "hasCommunity": true,
+          "hasFooter": true
+        },
+        {
+          "characters": 9843,
+          "hasHero": true,
+          "hasCommunity": true,
+          "hasFooter": true
+        }
+      ]
+    },
+    "COMPONENTS.md": {
+      "status": 200,
+      "tables": 23,
+      "blocks": 92,
+      "headings": [
+        "Toàn trang — page",
+        "Nhận diện và công cụ — site-header",
+        "Tìm kiếm — search-form",
+        "Điều hướng desktop — primary-nav",
+        "Menu mobile — mobile-drawer",
+        "Banner đầu trang — hero",
+        "Tin tức và thông báo — news-layout",
+        "Thẻ tin — news-card",
+        "Danh sách thông báo — announcements",
+        "Sự kiện — events",
+        "Thẻ sự kiện — event-card",
+        "Những con số ấn tượng — statistics",
+        "Banner thông điệp — identity-banner",
+        "Tuyển sinh — admissions",
+        "Đào tạo / Sinh viên / Cựu sinh viên — audiences",
+        "Các đơn vị đào tạo, KHCN — units",
+        "Hợp tác quốc tế — international",
+        "Nghiên cứu — research",
+        "Mạng lưới đối tác — partners",
+        "Vì cộng đồng — community",
+        "Khoảnh khắc TLU — moments",
+        "Chân trang — site-footer",
+        "Liên kết mạng xã hội nổi — social-rail"
+      ]
+    },
+    "KIEM_TRA.md": {
+      "status": 200,
+      "tables": 1,
+      "blocks": 0,
+      "headings": [
+        "Đối chiếu 15 phần của master prompt",
+        "Phép kiểm tra đã chạy",
+        "Giới hạn giữ nguyên",
+        "Tệp thay đổi trong lần rà soát"
+      ]
+    }
+  },
+  "anchors": [
+    {
+      "part": 1,
+      "count": 1,
+      "hash": "#phan-1",
+      "top": 124.96875
+    },
+    {
+      "part": 2,
+      "count": 1,
+      "hash": "#phan-2",
+      "top": 124.515625
+    },
+    {
+      "part": 3,
+      "count": 1,
+      "hash": "#phan-3",
+      "top": 124.703125
+    },
+    {
+      "part": 4,
+      "count": 1,
+      "hash": "#phan-4",
+      "top": 124.890625
+    },
+    {
+      "part": 5,
+      "count": 1,
+      "hash": "#phan-5",
+      "top": 125.078125
+    },
+    {
+      "part": 6,
+      "count": 1,
+      "hash": "#phan-6",
+      "top": 124.703125
+    },
+    {
+      "part": 7,
+      "count": 1,
+      "hash": "#phan-7",
+      "top": 124.890625
+    },
+    {
+      "part": 8,
+      "count": 1,
+      "hash": "#phan-8",
+      "top": 125.078125
+    },
+    {
+      "part": 9,
+      "count": 1,
+      "hash": "#phan-9",
+      "top": 125.265625
+    },
+    {
+      "part": 10,
+      "count": 1,
+      "hash": "#phan-10",
+      "top": 125.453125
+    },
+    {
+      "part": 11,
+      "count": 1,
+      "hash": "#phan-11",
+      "top": 124.859375
+    },
+    {
+      "part": 12,
+      "count": 1,
+      "hash": "#phan-12",
+      "top": 125.046875
+    },
+    {
+      "part": 13,
+      "count": 1,
+      "hash": "#phan-13",
+      "top": 124.703125
+    },
+    {
+      "part": 14,
+      "count": 1,
+      "hash": "#phan-14",
+      "top": 124.890625
+    },
+    {
+      "part": 15,
+      "count": 1,
+      "hash": "#phan-15",
+      "top": 271.078125
+    }
+  ],
+  "images": [
+    {
+      "file": "desktop.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "file": "mobile.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "file": "mobile-menu.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "file": "desktop-dropdown.png",
+      "status": 200,
+      "type": "image/png"
+    }
+  ],
+  "passed": true
+}

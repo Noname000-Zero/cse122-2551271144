@@ -24,7 +24,7 @@ Ngày 25/11/2026 (Asia/Saigon). AI đã sửa và kiểm tra tài liệu theo y�
 
 ## Phép kiểm tra đã chạy
 
-- Markdown: code fence cân bằng, link tệp tương đối tồn tại, đủ 15 anchor mục lục. Đã kiểm tra tĩnh và mở bản render GitHub không đăng nhập; lần đầu phát hiện phần lặp, đang kiểm tra lại bản sửa.
+- Markdown: code fence cân bằng, link tệp tương đối tồn tại, đủ 15 anchor mục lục. Đã kiểm tra tĩnh và kiểm tra lại render GitHub không đăng nhập; phần lặp đã sửa, 15 anchor duy nhất và bấm cuộn đúng vùng.
 - Cấu trúc: phân tích 23 đoạn HTML minh họa bằng DOMParser trong Edge headless; section có heading, form có input có name và nút submit, input có label, ul có các con li. Đây là kiểm tra có mục tiêu, không thay thế trình kiểm chuẩn HTML toàn diện.
 - Cây toàn trang ghép từ ví dụ: đúng 1 main, không có main lồng main, không có id trùng.
 - CSS tính toán của ví dụ ở viewport mặc định 1280×720: ba vùng topic-grid đều có 4 items và 4 cột (308px/cột); gallery grid-column `2 / span 3`, grid-row `span 2`; event-date absolute và event-media relative.
@@ -45,3 +45,18 @@ Code là ví dụ cấu trúc, không phải website hoàn chỉnh: chưa có JS
 - KIEM_TRA.md: đối chiếu 15 phần và ghi kết quả kiểm tra thực tế.
 
 Bằng chứng assets giữ nguyên. Chưa coi những giới hạn trên là đã hoàn thành kiểm thử.
+
+## Kiểm tra xuất bản GitHub thực tế
+
+Ngày 25/11/2026, Edge headless không đăng nhập, viewport 1440×1000. Nội dung được kiểm tra lại tại commit `d5e2413`, sau commit bài `9e3be23`. Repository Public được xác nhận bằng GitHub CLI; ba trang dưới trả HTTP 200 trong phiên không có cookie đăng nhập, nên người có link có thể đọc mà không cần được mời vào repository.
+
+- [README trên GitHub](https://github.com/Noname000-Zero/cse122-2551271144/blob/main/BTTH01/README.md): đủ 15 phần, 2 bảng, 5 code block; hai cây DOM được render thành pre, lần lượt 9.831 và 9.843 ký tự, đều có hero, community và footer.
+- Mục lục: đã bấm cả 15 mục, mỗi anchor tồn tại đúng một lần; đợi 1,8 giây cho cuộn hoàn tất, vị trí phần đích khoảng 125px từ đỉnh (phần 15 khoảng 271px do cuối trang).
+- [COMPONENTS](https://github.com/Noname000-Zero/cse122-2551271144/blob/main/BTTH01/COMPONENTS.md): 23 tiêu đề component, 23 bảng, 92 code block.
+- [KIEM_TRA](https://github.com/Noname000-Zero/cse122-2551271144/blob/main/BTTH01/KIEM_TRA.md): mở công khai và bảng đối chiếu được render.
+- Liên kết tương đối sang hai tài liệu được GitHub chuyển tới đúng đường dẫn BTTH01. Ảnh menu nhúng có naturalWidth > 0; bốn ảnh desktop/mobile/menu/dropdown tại raw.githubusercontent.com trả HTTP 200, Content-Type image/png.
+- Đã xem ảnh chụp vùng bản đồ bố cục, bảng tổng hợp và vùng cây DOM để kiểm tra khả năng đọc. Lần mở đầu phát hiện phần 14–15 và tiêu đề DOM bị lặp; đã sửa và kiểm tra lại trước khi lưu bộ bằng chứng này.
+
+Bằng chứng mới: [log kiểm tra](assets/github-render.json), [bản đồ bố cục](assets/github-part-1.png), [cây DOM](assets/github-part-12.png), [bảng tổng hợp](assets/github-part-13.png). Các ảnh/DOM/JSON khảo sát TLU cũ giữ nguyên. Bộ bằng chứng ghi commit nội dung đã kiểm tra; commit bổ sung hồ sơ xuất bản tiếp theo chỉ thêm bằng chứng và cập nhật mục này.
+
+Giới hạn: chưa kiểm tra render GitHub trên mobile hoặc mọi browser; không kiểm tra mọi link ngoài. Việc xuất bản không bổ sung kết quả khảo sát tương tác TLU còn thiếu ở phần Giới hạn giữ nguyên. Hà chưa xác nhận nghiệm thu.
