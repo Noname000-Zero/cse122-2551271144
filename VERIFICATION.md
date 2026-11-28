@@ -1,119 +1,108 @@
 ﻿# Đối chiếu sáu bài thực hành — 28/11/2026
 
-## Phạm vi và căn cứ
+## Kết quả hiện hành
 
-Đối chiếu trên mã hiện có, không làm lại bài. Repository `Noname000-Zero/cse122-2551271144`, nhánh `main`; phiên bản mã ex10 đã push: `8636e7c`. Quy tắc cá nhân 2.4 và `DuLieuNguon/Chung/README.md` đã đọc.
+Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy tắc cá nhân 2.4, DuLieuNguon/Chung/README.md, toàn bộ 18 trang của sáu PDF và quy chuẩn cuối từng PDF. Đúng repository Noname000-Zero/cse122-2551271144, nhánh main. Sản phẩm dùng exNN/index.html, CSS ngoài css/style.css, ảnh nội bộ images/; bỏ đường dẫn cũ trong đề.
 
-Đã đọc đủ 18 trang (3 trang/bài) của sáu PDF trong `DuLieuNguon/ex04`, `ex05`, `ex06`, `ex09`, `ex10`, `ex11`, kể cả trang quy chuẩn nộp cuối mỗi PDF. Trang cuối được ưu tiên: `exNN/index.html`, `css/style.css`, `images/` cho bài có ảnh; không sử dụng đường dẫn cũ `baiNN.html` hoặc `Anh/BaiNN/`. ex09/ex10 không yêu cầu thư mục ảnh theo quy chuẩn riêng.
-
-“Đạt” trong bảng dưới chỉ áp dụng tiêu chí được kiểm tra. Bài thiếu ảnh hoặc dữ liệu vẫn **chưa hoàn thành**, kể cả khi bố cục/CSS đã đạt. Chưa có kết quả chấm LMS.
-
-## Kiểm tra chung
-
-- Chrome headless qua Playwright; desktop 1366×900 và mobile 390×900, 12 lượt mở trang; đo computed style và kích thước hiển thị, chụp ảnh trang. Đã xem giao diện, không chỉ kiểm tra mã.
-- Sáu bài đều có `index.html`, CSS ngoài `css/style.css` tải được; mã HTML không có thẻ style hoặc thuộc tính style. Thư mục images của ex04/ex05/ex06/ex11 đã có nhưng còn trống.
-- Các tài nguyên đang được tham chiếu (CSS, JS) dùng đường dẫn tương đối và có tệp thật. Không liên kết sang DuLieuNguon, ổ đĩa, CDN hoặc bài khác. Vùng chờ ảnh không phải ảnh đã tải thành công.
-- Không tràn ngang ở hai kích thước đã thử. Không có lỗi JavaScript. Chưa kiểm tra mọi trình duyệt hoặc mọi độ rộng màn hình.
-- ex09/ex10 không có img, ảnh nền bên ngoài, thư viện hoặc font tải từ mạng. Avatar dùng CSS; ex10 dùng JavaScript thuần cho mô phỏng gửi/reset.
-
-## ex04 — Đà Nẵng
-
-| Yêu cầu | Sản phẩm thực tế / bằng chứng | Kết luận |
+| Bài | Kết quả kỹ thuật / nội dung | Đồng bộ |
 | --- | --- | --- |
-| h1 + span hai dòng, xanh #1565C0, in hoa | Có h1 và span con; span computed display:block, font-size:0.7em; h1 26px, màu rgb(21,101,192), text-transform:uppercase, căn giữa | Đạt |
-| Hai đoạn văn đúng nội dung và strong | Hai đoạn bắt đầu Đ / M; Bà Nà Hills và bán đảo Sơn Trà dùng strong; đã đối chiếu văn bản | Đạt |
-| Hai drop cap đỏ | Cả hai ::first-letter computed màu rgb(198,40,40), float:left, 48px (3rem), đậm | Đạt |
-| Thanh phụ căn phải | h2 đúng “Cầu Rồng – biểu tượng sông Hàn”, nền xanh/chữ trắng, text-align:right | Đạt |
-| Banner ảnh, cao tối đa 280px, cover, bo 8px | CSS .banner đã có thông số; hiện là div báo chờ, chưa có img hoặc ảnh gốc | Chưa đạt phần ảnh; chưa kiểm tra cắt/tỷ lệ ảnh thật |
+| ex04 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác ảnh gốc PDF | Thuộc đợt commit/push này |
+| ex05 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác Rose.gif gốc | Thuộc đợt commit/push này |
+| ex06 | Đã kiểm tra, đủ 8 món và có ảnh thật do Hà bổ sung; khác Bat.gif gốc | Thuộc đợt commit/push này |
+| ex09 | Đã cá nhân hóa từ CV và kiểm tra local; chờ duyệt thông tin công khai | Chưa commit/push, vẫn ignore |
+| ex10 | Đã kiểm tra đủ yêu cầu HTML5 Form và mô phỏng gửi/reset | Đã có trên GitHub; không sửa mã trong đợt này |
+| ex11 | Đã tích hợp và kiểm tra 5 ảnh; còn thiếu ảnh đúng Động Phong Nha | Chưa hoàn thành, chưa commit/push, vẫn ignore |
 
-**Trạng thái bài:** chưa hoàn thành, bản local, chưa push.
+“Đã kiểm tra” là kết quả kiểm tra sản phẩm; không phải xác nhận chấm đạt hay đã nộp LMS. ex04–ex06 dùng ảnh bổ sung khác ảnh gốc nên không khẳng định khớp từng điểm ảnh của mẫu. Giữ nguyên bố cục và kỹ thuật theo đề, không đổi thiết kế.
 
-## ex05 — Hoa tươi Nhân Ái
+## Kiểm kê và bảo toàn tài nguyên
 
-| Yêu cầu | Sản phẩm thực tế / bằng chứng | Kết luận |
-| --- | --- | --- |
-| Grid 220px 1fr, gap 24px | Computed desktop 220px 616px, display:grid; mobile xếp một cột | Đạt |
-| Tiêu đề #C2185B, 26px, giữa | Đúng nội dung và CSS | Đạt |
-| Giới thiệu / liên hệ, nền #FFC0CB | Hai h2 có nền rgb(255,192,203), đậm; đủ 4 dòng giới thiệu và 2 dòng liên hệ, đã đối chiếu nội dung | Đạt |
-| square / circle | Hai ul computed list-style-type lần lượt square / circle; line-height:1.9 | Đạt |
-| Copyright xanh, gạch chân, giữa | Đúng văn bản, CSS màu #0000EE, text-decoration:underline, text-align:center | Đạt |
-| Ảnh hoa hồng Rose.gif | Chưa có ảnh; vùng chờ ghi images/rose.gif, tên sản phẩm chữ thường theo quy chuẩn cuối PDF | Chưa đạt phần ảnh |
+Đã mở đủ 9 ảnh trong BoSung và đọc CV PDF. Sao chép 8 ảnh vào sản phẩm, giữ định dạng thật, không chỉ đổi đuôi tệp. Đã so hash toàn bộ đầu vào hiện hữu trước khi cập nhật tài liệu quản lý: không thay đổi tệp đề, CV, ảnh hoặc README BoSung. Sau đó chỉ cập nhật DuLieuNguon/README.md để phản ánh tài liệu đã nhận; tạo thêm publication-review.md local cho Hà duyệt ex09. Không di chuyển nguồn.
 
-**Trạng thái bài:** chưa hoàn thành, bản local, chưa push.
-
-## ex06 — Các món ngon Hà Nội
-
-| Yêu cầu | Sản phẩm thực tế / bằng chứng | Kết luận |
-| --- | --- | --- |
-| Bảng semantic | Có table/thead/tbody/tr/th/td, th scope=col, border-collapse:collapse | Đạt |
-| Đúng tám món và thứ tự | So sánh toàn bộ tám hàng và STT 1–8 với đề, không chỉ đếm hàng | Đạt |
-| Zebra chỉ trong tbody | Selector tbody tr:nth-child(even); đo dòng lẻ rgb(255,255,255), chẵn rgb(253,248,239) | Đạt |
-| Màu nền/trang/tiêu đề và đường kẻ | Body #FAF3E0, h1 #E65100; thead nền #E65100, chữ trắng; border dưới dòng #E0D6C2 | Đạt |
-| STT 60px và cột tên căn trái | Đo STT đúng 60px; cột STT giữa, cột tên trái; desktop Grid 220px 616px | Đạt |
-| Ảnh Bat.gif ở cột trái | Chưa có ảnh; chỉ vùng chờ images/bat.gif | Chưa đạt phần ảnh |
-
-Thứ tự đã kiểm tra: Bánh cuốn Thanh Trì; Xôi Hà Nội; Chả cá Lã Vọng; Cháo Cóc; Bánh Gai Ninh Giang; Bún Thang Hà Nội; Canh Lằng; Vịt quay Lạng Sơn. Giữ văn bản đề, không tự sửa tên món hoặc địa danh.
-
-**Trạng thái bài:** chưa hoàn thành, bản local, chưa push.
-
-## ex09 — CV Online
-
-| Yêu cầu | Sản phẩm thực tế / bằng chứng | Kết luận |
-| --- | --- | --- |
-| Khung 860px, Grid 280px 1fr | Đo desktop 860px, hai cột 280px 580px, bo góc 12px; mobile một cột | Đạt phần bố cục |
-| Avatar chữ bằng CSS | Div 110×110px, display:flex, căn giữa, border-radius:50%, nền trắng/chữ #1565C0; không có ảnh chân dung | Đạt kỹ thuật tạo hình; nội dung chữ viết tắt còn chờ (hiện “?”) |
-| Cột trái gradient | Computed linear-gradient(#1565C0,#0D3F7A), chữ trắng | Đạt |
-| Năm chip viên thuốc | Đúng 5 li, border-radius:999px; đều ghi “Chờ kỹ năng” | Đạt kỹ thuật/số lượng; chưa đạt nội dung kỹ năng |
-| Giới thiệu, học vấn, liên hệ và liên kết | Có đủ vùng nội dung; tất cả là chờ bổ sung; không có URL thật để thử | Chưa hoàn thành dữ liệu và tương tác liên kết |
-| Cá nhân hóa có căn cứ | Đã tìm cả thư mục con ex09, chưa thấy CV. Không lấy Nguyễn Văn An hoặc năm kỹ năng HTML5/CSS3/JavaScript/Bootstrap/Git trong mẫu làm hồ sơ/năng lực của Hà | Đúng giới hạn dữ liệu; chờ CV và duyệt thông tin công khai |
-
-**Trạng thái bài:** chỉ bản bố cục local, chưa push. Không cần bổ sung ảnh. Chờ Hà xác nhận họ tên/chữ viết tắt, ngành/khóa, email, điện thoại, địa chỉ ở mức muốn công khai, GitHub, giới thiệu/định hướng, kỹ năng, thời gian/trường/ngành học và URL Portfolio/Facebook/LinkedIn. CV gốc không được đưa lên GitHub.
-
-## ex10 — Biểu mẫu liên hệ
-
-| Yêu cầu | Sản phẩm thực tế / bằng chứng | Kết luận |
-| --- | --- | --- |
-| Khung form 660px, header xanh #0F766E, đúng tiêu đề/mô tả | Đo khung 660px desktop; đúng văn bản và màu, bo 12px | Đạt |
-| Hai hàng ngắn 2 cột bằng nhau, gap 16px | Đo desktop mỗi cột 296px, gap 16px; mobile một cột | Đạt |
-| text/email/tel và label-for-id | Đúng type của từng ô; cả 6 control đều có label trỏ đúng id duy nhất | Đạt |
-| Select ba chủ đề | Hỏi về khoá học / Hỗ trợ kỹ thuật / Khác đúng thứ tự; đã đổi lựa chọn thử | Đạt |
-| Textarea rows=4 | Thuộc tính DOM rows đúng 4; nhập thử được | Đạt |
-| Checkbox và submit/reset | Checkbox đổi trạng thái được; button.type đúng submit/reset; reset xóa giá trị và bỏ chọn checkbox | Đạt |
-| Validation và mô phỏng gửi | Required ngăn gửi khi trống; email sai không hợp lệ; dữ liệu hợp lệ hiển thị rõ “Thông tin chưa được gửi tới máy chủ.” | Đạt phần demo; không gửi email thật |
-| Không dùng ảnh ngoài/thư viện | Không có ảnh; CSS + JS thuần nằm trong bài | Đạt |
-
-**Trạng thái bài:** đã kiểm tra yêu cầu bài HTML5 Form, đã push. Không có backend/email service; không coi demo là dịch vụ gửi email thật. Chưa nộp LMS.
-
-## ex11 — Thư viện ảnh Việt Nam
-
-| Yêu cầu | Sản phẩm thực tế / bằng chứng | Kết luận |
-| --- | --- | --- |
-| Sáu figure/figcaption, đúng thứ tự | Đo đúng 6 figure có figcaption trực tiếp; so sánh đủ văn bản, xem danh sách dưới | Đạt cấu trúc và chú thích |
-| Grid ba cột desktop, gap 18px | Computed 321.328px / 321.328px / 321.344px, gap 18px; khung 1000px, 3 cột × 2 hàng | Đạt bố cục |
-| Nền tối, figure bo 10px, margin 0 | Body #0F172A, chữ #E2E8F0; figure #1E293B, margin:0, bo 10px | Đạt |
-| Ảnh thật cao 170px, object-fit:cover, không méo | CSS figure img có height:170px, width:100%, object-fit:cover, display:block. Hiện imgCount=0; chỉ 6 div chờ cao 170px | Chưa đạt phần ảnh; chưa thể kiểm tra tải/cắt/tỷ lệ ảnh thật |
-| Mobile | Một cột tại 390px, không tràn ngang; không thay đổi cấu trúc desktop | Đạt phần bố cục |
-
-Thứ tự chú thích đã kiểm tra: Hình 1. Vịnh Hạ Long; Hình 2. Hang Sơn Đoòng; Hình 3. Thác Bản Giốc; Hình 4. Fansipan; Hình 5. Đồng bằng sông Cửu Long; Hình 6. Động Phong Nha.
-
-**Trạng thái bài:** chưa hoàn thành, bản local, chưa push.
-
-## Tài nguyên còn thiếu và nơi bổ sung
-
-Đã kiểm kê đệ quy toàn bộ DuLieuNguon của repository hiện hành và tìm ảnh trong bản repository cũ `H:\Projects\NhiemVuHeThong\cse122-2551271144`. Chưa tìm thấy các ảnh gốc được chỉ định cho bốn bài. Bản cũ có ảnh của ex02/ex03 và ảnh chụp kiểm tra BTTH01; chưa có căn cứ coi chúng là bộ ảnh đúng của sáu đề nên không tự thay thế.
-
-Thư mục gốc đầu vào: `H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon`.
-
-| Đường dẫn nhận tài liệu đầy đủ | Tệp cần bổ sung |
+| Đầu vào trong DuLieuNguon | Bản sao trong sản phẩm |
 | --- | --- |
-| H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex04\ | da-nang.jpg |
-| H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex05\ | Rose.gif (sản phẩm sẽ dùng rose.gif) |
-| H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex06\ | Bat.gif (sản phẩm sẽ dùng bat.gif) |
-| H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex11\ | 1-vinh-ha-long.jpg, 2-son-doong.jpg, 3-thac-ban-gioc.jpg, 4-fansipan.jpg, 5-mekong.jpg, 6-phong-nha.jpg |
-| H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex09\ | CV tham khảo; có thể đặt trong thư mục con |
+| ex04/BoSung/-laho-bSuW.png | ex04/images/da-nang.png |
+| ex05/BoSung/e4985ff08447306f943d16bbace60e61.jpg | ex05/images/rose.jpg |
+| ex06/BoSung/images.jpg | ex06/images/bowl.jpg |
+| ex11/BoSung/Vinh-Ha-Long-1.jpg | ex11/images/1-vinh-ha-long.jpg |
+| ex11/BoSung/images.jpg | ex11/images/2-son-doong.jpg |
+| ex11/BoSung/images (1).jpg | ex11/images/3-thac-ban-gioc.jpg |
+| ex11/BoSung/dinh-nui-fansipan.jpg | ex11/images/4-fansipan.jpg |
+| ex11/BoSung/images (2).jpg | ex11/images/5-mekong.jpg |
 
-Khi có ảnh: sao chép vào images của sản phẩm, thay vùng chờ bằng img có alt, kiểm tra tải ảnh và so mẫu desktop/mobile trước khi bỏ ignore riêng bài rồi commit/push. Khi có CV: chọn thông tin cần thiết, liệt kê giá trị dự kiến công khai để Hà duyệt trước push ex09. Không lấy ảnh trong PDF mẫu làm ảnh gốc hoặc đưa PDF/CV lên GitHub.
+Tệp 7-cai-nhat-cua-phong-nha-ke-bang-1639936654793597781412.jpg cùng cảnh cửa hang với ảnh Sơn Đoòng; tên Phong Nha–Kẻ Bàng không đủ xác nhận là Động Phong Nha. Không gán nhầm địa danh để đủ sáu ảnh. Cần bổ sung ảnh đúng Động Phong Nha vào H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex11\BoSung. Các ảnh cung cấp được sử dụng trong phạm vi bài học theo yêu cầu Hà; chưa xác minh độc lập bản quyền/nguồn xuất xứ của từng ảnh từ Internet.
 
-## Trạng thái Git và phạm vi giữ nguyên
+## Kiểm tra thực tế
 
-Chỉ ex10 và tài liệu quản lý đã có trên GitHub; năm bản nháp đang bị ignore có chủ đích, vẫn còn đầy đủ trên máy. Đợt đối chiếu này bổ sung bằng chứng kiểm tra, không đổi thiết kế hoặc viết lại mã bài. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên. ex07–ex08 chưa có đề, chưa thực hiện. Không thao tác nộp LMS.
+Chrome headless qua Playwright, desktop 1366×900, tablet 768×900 và mobile 390×900: 18 lượt mở sáu bài. Đo computed style và kích thước thật, chụp ảnh và xem giao diện. Sáu bài không tràn ngang ở các kích thước đã thử, CSS tải được, không lỗi JavaScript. Không có CSS inline trong mã nguồn; không có thư viện/font ngoài. Mọi tài nguyên đang tham chiếu có tệp thật và đường dẫn đúng chữ hoa/thường; không phụ thuộc DuLieuNguon hoặc bài khác.
+
+### ex04
+
+| Tiêu chí theo đề | Bằng chứng / kết luận |
+| --- | --- |
+| h1 + span hai dòng | Đạt: span display:block, cỡ 0.7em; h1 26px, #1565C0, uppercase, căn giữa |
+| Hai drop cap đỏ và nội dung | Đạt: đúng hai đoạn bắt đầu Đ/M; ::first-letter #C62828, float:left, 48px, đậm. Bà Nà Hills / bán đảo Sơn Trà dùng strong; văn bản giữ đúng đề |
+| Thanh phụ căn phải | Đạt: đúng nội dung “Cầu Rồng – biểu tượng sông Hàn”, nền #1565C0, chữ trắng, text-align:right |
+| Banner thật | Đạt kỹ thuật: PNG 800×418 tải được, desktop 860×280, object-fit:cover, bo 8px. Điểm cắt chỉnh để cân bằng chữ và cầu trong ảnh có sẵn; mobile không méo ảnh |
+| So với mẫu | Ảnh mới có chữ ĐÀ NẴNG in sẵn và là cảnh ban ngày; khác ảnh đêm trong PDF. Không xóa/sửa chữ trên nguồn |
+
+### ex05
+
+| Tiêu chí theo đề | Bằng chứng / kết luận |
+| --- | --- |
+| Grid 220px 1fr, gap 24px | Đạt: desktop đo 220px / 616px; mobile một cột |
+| Danh sách và nội dung | Đạt: ul square/circle đúng thứ tự, đủ 4 dòng giới thiệu và 2 dòng liên hệ; line-height:1.9 |
+| Tiêu đề / nhãn / copyright | Đạt: h1 #C2185B 26px căn giữa; h2 nền #FFC0CB; copyright #0000EE gạch chân căn giữa |
+| Ảnh thật | Đạt tải và tỷ lệ: JPG hoa hồng 236×354, hiển thị 220×330. Không giả đổi JPG thành GIF |
+| So với mẫu | Hoa hồng đỏ nền hồng khác Rose.gif hoa hồng nhạt trong PDF; dùng ảnh Hà cung cấp, không khẳng định trùng ảnh gốc |
+
+### ex06
+
+| Tiêu chí theo đề | Bằng chứng / kết luận |
+| --- | --- |
+| Bảng semantic | Đạt: table/thead/tbody/tr/th/td, th scope=col, border-collapse:collapse |
+| Tám món / thứ tự | Đạt so sánh đầy đủ: Bánh cuốn Thanh Trì; Xôi Hà Nội; Chả cá Lã Vọng; Cháo Cóc; Bánh Gai Ninh Giang; Bún Thang Hà Nội; Canh Lằng; Vịt quay Lạng Sơn. STT 1–8 đúng |
+| Zebra chỉ trong tbody | Đạt: tbody tr:nth-child(even); đo lẻ #FFFFFF, chẵn #FDF8EF; đường kẻ #E0D6C2 |
+| Cột STT / màu / bố cục | Đạt: STT đo 60px và căn giữa; tên món căn trái; body #FAF3E0, h1/thead #E65100; Grid trái 220px |
+| Ảnh thật | JPG tô món ăn 554×554 tải được, hiển thị 220×220 không méo. Đây là hình Hà bổ sung, khác Bat.gif trong PDF |
+
+### ex09
+
+| Tiêu chí theo đề | Bằng chứng / kết luận |
+| --- | --- |
+| Khung và Grid | Đạt bố cục local: 860px, desktop 280px / 580px; bo 12px; mobile một cột |
+| Avatar CSS / cột trái | Đạt: chữ viết tắt từ tên CV, không ảnh chân dung; 110×110px, flex căn giữa, border-radius:50%, nền trắng/chữ #1565C0; aside gradient #1565C0 → #0D3F7A |
+| Năm chip | Đủ 5 chip border-radius:999px, nội dung rút gọn từ năng lực/công cụ ghi trong CV; không lấy năm kỹ năng nhân vật mẫu làm năng lực của Hà |
+| Nội dung cá nhân hóa | Đã dùng phần giới thiệu, học vấn, liên hệ và hai URL có trong CV. Không thêm thành tích/chứng chỉ/số liệu; không tự điền địa chỉ, năm nhập học, GitHub/Facebook/LinkedIn còn thiếu |
+| Liên kết | mailto/tel đúng cú pháp và giá trị từ CV; không thực hiện gửi thư/gọi điện. URL dự án trả HTTP 200. TryHackMe trả 429, chưa xác minh truy cập thành công trang đích; không coi 429 là link chết |
+| Quyền công khai | Bản local có thông báo chờ duyệt; danh sách giá trị cụ thể lưu trong DuLieuNguon/ex09/BoSung/publication-review.md. Chưa push ex09; tài liệu báo cáo công khai này không liệt kê giá trị liên hệ riêng tư |
+
+CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nhận định trong CV. Không dùng mốc “năm 2” để suy ra năm học hiện tại vì CV chưa cập nhật. Không đưa hoạt động riêng tư ngoài phần bài cần dùng. Chờ Hà duyệt danh sách công khai trước khi bỏ ignore/commit/push ex09. Không cần bổ sung ảnh.
+
+### ex10
+
+| Tiêu chí theo đề | Bằng chứng / kết luận |
+| --- | --- |
+| Khung và header | Đạt: 660px desktop, header #0F766E, đúng tiêu đề/mô tả |
+| Hai hàng hai cột | Đạt: desktop mỗi cột 296px, gap 16px; mobile một cột |
+| Các control | Đạt: input text/email/tel, 6 control đều có label-for-id tương ứng; select đúng 3 lựa chọn Hỏi về khoá học / Hỗ trợ kỹ thuật / Khác; textarea rows=4; checkbox; submit/reset |
+| Tương tác thực tế | Đạt thử required, email sai, nhập hợp lệ, đổi chủ đề, chọn checkbox, submit minh họa và reset xóa dữ liệu/bỏ chọn |
+| Gửi demo | Thông báo nói rõ chưa gửi tới máy chủ; không có backend hoặc gửi email thật. Không lưu dữ liệu người dùng, không cần ảnh hoặc thư viện ngoài |
+
+### ex11
+
+| Tiêu chí theo đề | Bằng chứng / kết luận |
+| --- | --- |
+| Sáu figure/figcaption | Đạt cấu trúc và văn bản: Vịnh Hạ Long, Hang Sơn Đoòng, Thác Bản Giốc, Fansipan, Đồng bằng sông Cửu Long, Động Phong Nha đúng thứ tự, đánh số 1–6 |
+| Grid ba cột, gap 18px | Đạt: desktop khung 1000px, ba cột khoảng 321.33px; 3×2 hàng; gap 18px. Mobile một cột |
+| Nền và figure | Đạt: body #0F172A, chữ #E2E8F0; figure #1E293B, margin:0, bo 10px |
+| Ảnh thật | 5/6 ảnh tải được; đo từng ảnh cao 170px, rộng theo cột, object-fit:cover và display:block; không kéo méo. Ảnh Fansipan đã có chữ/logo trong nguồn, giữ nguyên |
+| Vị trí thứ sáu | Chưa đạt: còn vùng chờ Động Phong Nha, không gán nhầm ảnh Sơn Đoòng. Không coi vùng chờ là ảnh hoàn chỉnh |
+
+## Giới hạn và bước còn lại
+
+- ex04–ex06 đạt kiểm tra mã, nội dung và ảnh mới cung cấp; không đạt mức ảnh trùng tuyệt đối với mẫu PDF. Nếu giảng viên bắt buộc đúng ảnh gốc, cần bộ ảnh gốc tương ứng.
+- ex09 chờ duyệt thông tin công khai; TryHackMe đang giới hạn truy cập kiểm tra (HTTP 429). Bản local đã sẵn để xem.
+- ex11 chờ một ảnh đúng Động Phong Nha; các phần độc lập và 5 ảnh đã hoàn thiện local. Khi có ảnh, thay vùng chờ, kiểm tra lại cả desktop/mobile rồi mới bỏ ignore và push.
+- Mới kiểm tra Chrome ở ba kích thước nêu trên; chưa thử mọi trình duyệt/thiết bị, chưa có kết quả chấm LMS.
+- Đề/CV gốc, README BoSung và ghi chú duyệt cá nhân không nằm trong commit. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên; ex07–ex08 chưa có đề, không thực hiện; không thao tác LMS.

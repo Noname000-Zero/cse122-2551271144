@@ -1,19 +1,16 @@
-# Tài liệu nguồn
+# Dữ liệu nguồn
 
-Chung/: quy định LMS và hướng dẫn chung. exNN/: đề, ảnh mẫu, tài nguyên, phản hồi cho bài NN; tạo tiếp thư mục theo số bài mới. Sản phẩm ở exNN/ tại gốc, không liên kết ảnh sang đây.
+Chung/: quy định dùng chung. exNN/: đề, mẫu, phản hồi; BoSung/ bên trong bài nhận ảnh/tài liệu bổ sung. Hà có thể giữ nguyên tên đầu vào; AI sao chép và chuẩn hóa tên trong exNN/images của sản phẩm.
 
-## Kiểm kê ngày 28/11/2026
+## Kiểm kê 28/11/2026
 
-Đã đọc Chung/README.md và toàn bộ 3 trang mỗi PDF trong ex04, ex05, ex06, ex09, ex10, ex11 (18 trang), gồm yêu cầu, mẫu và quy chuẩn LMS cuối PDF. Đã tìm cả thư mục con: chưa thấy CV hoặc bộ ảnh rời. ex07–ex08 chưa có đề.
+Đã đọc đủ 18 trang của sáu đề PDF (04,05,06,09,10,11), kể cả quy chuẩn cuối mỗi PDF. Đã mở 9 ảnh bổ sung và đọc CV trong ex09/BoSung. Đề, CV và mọi tệp nguồn cũ được giữ nguyên.
 
-## Cần bổ sung
+- ex04: nhận 1 PNG Đà Nẵng, sao chép sang ex04/images/da-nang.png.
+- ex05: nhận 1 JPG hoa hồng, sao chép sang ex05/images/rose.jpg.
+- ex06: nhận 1 JPG tô món ăn, sao chép sang ex06/images/bowl.jpg.
+- ex09: đã đọc CV tham khảo; bản dự kiến công khai chỉ lưu local trong ex09/BoSung/publication-review.md, chờ Hà duyệt.
+- ex11: nhận 6 ảnh; đã dùng 5. Ảnh tên 7-cai-nhat-cua-phong-nha-ke-bang-1639936654793597781412.jpg cùng cảnh Sơn Đoòng với images.jpg, chưa dùng làm Động Phong Nha. Cần thêm một ảnh đúng Động Phong Nha vào ex11/BoSung.
+- ex10: không cần ảnh. ex07/ex08: chưa có đề.
 
-- ex04/: da-nang.jpg
-- ex05/: Rose.gif
-- ex06/: Bat.gif
-- ex11/: 1-vinh-ha-long.jpg, 2-son-doong.jpg, 3-thac-ban-gioc.jpg, 4-fansipan.jpg, 5-mekong.jpg, 6-phong-nha.jpg
-- ex09/: CV tham khảo trong bất kỳ thư mục con; không đưa CV gốc lên Git.
-
-Thông tin cần duyệt cho ex09: họ tên, chữ viết tắt avatar, ngành/khóa, email, điện thoại, địa chỉ ở mức muốn công khai, GitHub, giới thiệu/định hướng, 5 kỹ năng đã xác nhận, thời gian/trường/ngành học, URL Portfolio/Facebook/LinkedIn. Chưa có giá trị cá nhân nào được đưa vào bản nháp. Không dùng dữ liệu Nguyễn Văn An trong mẫu làm hồ sơ của Hà.
-
-Tài liệu đầu vào chỉ lưu local và bị Git bỏ qua; riêng README này được quản lý phiên bản. Chỉ sao chép tài nguyên vào sản phẩm sau khi xác minh đúng bài và quyền chia sẻ. Không công khai PDF đề trên GitHub Pages.
+Đầu vào chỉ lưu local, bị Git bỏ qua; riêng README này được quản lý phiên bản. Không công khai PDF đề hoặc CV gốc. Ảnh sản phẩm không liên kết sang DuLieuNguon. Xem VERIFICATION.md ở gốc để biết kết quả thực tế và các khác biệt với mẫu.
