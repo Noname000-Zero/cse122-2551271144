@@ -11,7 +11,7 @@ Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy t
 | ex06 | Đã kiểm tra, đủ 8 món và có ảnh thật do Hà bổ sung; khác Bat.gif gốc | Thuộc đợt commit/push này |
 | ex07 | Đã nhận ảnh Double Rich Hà bổ sung; nội dung, bố cục và ảnh thật đã kiểm tra cuối | Thuộc đợt đồng bộ ex07 hiện tại |
 | ex08 | Hoàn thiện 7 bài/7 ảnh thay thế có nguồn, tác giả, giấy phép; Du lịch theo quyết định Hà | Đã kiểm tra desktop/mobile, thuộc đợt đồng bộ này |
-| ex09 | Hà đã duyệt công khai; kiểm tra cuối theo đề và nội dung đã duyệt | Được commit/push trong đợt chốt ex09 |
+| ex09 | Đã bổ sung Orbit Academy theo README; 6 dự án, giữ nguyên học vấn vì không có năm nhập học trong CV | Cập nhật trong đợt rà soát cuối |
 | ex10 | Đã kiểm tra đủ yêu cầu HTML5 Form và mô phỏng gửi/reset | Đã có trên GitHub; không sửa mã trong đợt này |
 | ex11 | Đã kiểm tra đủ 6 ảnh theo danh thắng và thứ tự, nguồn ảnh 6 có ghi công | Thuộc đợt commit/push hiện tại |
 
@@ -107,7 +107,7 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 - ex09 đã được Hà duyệt công khai; TryHackMe từng trả HTTP 429 khi kiểm tra, nên chưa xác nhận truy cập thành công trang đích.
 - ex11 đã đủ sáu ảnh và được bỏ ignore riêng bài để đồng bộ; nguồn ảnh 6 và giới hạn nhận diện ảnh mới được ghi rõ phía trên.
 - Mới kiểm tra Chrome ở ba kích thước nêu trên; chưa thử mọi trình duyệt/thiết bị, chưa có kết quả chấm LMS.
-- Đề/CV gốc, README BoSung và ghi chú duyệt cá nhân không nằm trong commit. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên; ex07–ex08 có đề mới và bản nháp, xem kết quả bổ sung phía cuối; không thao tác LMS.
+- Đề/CV gốc, README BoSung và ghi chú duyệt cá nhân không nằm trong commit. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên; ex07–ex08 đã hoàn thiện, xem kết quả bổ sung phía cuối; không thao tác LMS.
 
 ## Bổ sung đã kiểm tra trong đợt cập nhật ex11 và CV
 
@@ -121,10 +121,10 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 ## Chốt công khai ex09 sau khi Hà duyệt
 
 - Hà đã cho phép công khai nội dung bản duyệt; không cần cấp quyền lại. Bỏ thông báo chờ duyệt trên trang, không thêm thông tin cá nhân mới.
-- Kiểm tra cuối Chrome ở 1366×900, 768×900, 390×900: khung 860px và cột 280px/580px ở desktop; avatar CSS 110×110px/flex/50%; đúng 5 chip, đúng 5 URL dự án được đối chiếu; không ảnh chân dung, không thư viện ngoài, không CSS inline; không tràn ngang. Đã xem ảnh chụp desktop/mobile sau khi bỏ thông báo chờ duyệt.
+- Kiểm tra cuối Chrome ở 1366×900, 768×900, 390×900: khung 860px và cột 280px/580px ở desktop; avatar CSS 110×110px/flex/50%; đúng 5 chip, 5 URL dự án ở lần chốt trước khi bổ sung Orbit Academy; không ảnh chân dung, không thư viện ngoài, không CSS inline; không tràn ngang. Đã xem ảnh chụp desktop/mobile sau khi bỏ thông báo chờ duyệt.
 - Giữ nội dung cá nhân hóa Hà duyệt thay nhân vật mẫu; không tự suy ra năm học, địa chỉ hoặc năng lực ngôn ngữ. Chuẩn độ và PhysicsSim được ghi rõ dự án nhóm; phần phối hợp AI được mô tả đúng xác nhận.
 - Mục lục có liên kết ex09; các đường dẫn local tồn tại. CV PDF gốc giữ nguyên hash và bị ignore; commit không chứa PDF, publication-review.md hoặc thư mục nguồn riêng tư.
-- Các bài mới đã hoàn thiện và có mã nguồn local/GitHub: ex04, ex05, ex06, ex09, ex10, ex11. ex01–ex03 giữ nguyên và Hà đã xác nhận nộp lại trước đó. BTTH01 giữ nguyên; ex07–ex08 đã có đề mới, hiện là bản nháp thiếu tài nguyên. Không thao tác nộp LMS, không xác nhận chấm đạt.
+- Các bài mới đã hoàn thiện và có mã nguồn local/GitHub: ex04, ex05, ex06, ex09, ex10, ex11. ex01–ex03 giữ nguyên và Hà đã xác nhận nộp lại trước đó. BTTH01 giữ nguyên; ex07–ex08 đã được hoàn thiện trong các đợt tiếp theo, xem phía dưới. Không thao tác nộp LMS, không xác nhận chấm đạt.
 
 ## Ex07 và ex08 — triển khai theo hai PDF mới
 
@@ -183,3 +183,37 @@ Trước khi Hà bổ sung, ứng viên Flickr https://www.flickr.com/photos/211
 - Đã đối chiếu h1 và dải phụ, màu #C8102E/#FBE3E8, padding 14px/7px, chữ trắng/đỏ và font-weight:700. Đủ ba mục và nội dung 200ml/400ml, điều kiện đối tượng, thời hạn 15/06/2005 → 17h ngày 12/08/2005, trước 31/07/2005 theo dấu bưu điện. Không thay ngày tháng bằng dữ liệu mới.
 - Mục lục có link ex07, mọi link local tồn tại. Chỉ commit sản phẩm ex07 và tài liệu quản lý; không đưa PDF đề, CV hoặc BoSung gốc lên Git, không sửa mã các bài khác, không thao tác nộp LMS.
 - Hiện không còn tài nguyên bắt buộc đang thiếu cho ex07. Các bài ex04–ex11 đã có sản phẩm hoàn thiện theo phạm vi đã chốt; ex01–ex03 giữ nguyên và đã được Hà xác nhận nộp lại trước đó.
+
+## Rà soát cuối Orbit Academy, học vấn, ảnh Hạ Long và ex07
+
+### Orbit Academy trong ex09
+
+- Đã truy xuất metadata và đọc toàn bộ README công khai tại https://github.com/Noname000-Zero/oop-universe ngày 28/11/2026. Đúng tên Orbit Academy; repository không có homepage hosting.
+- Bổ sung một bullet thứ sáu vào cùng mục dự án trên trang CV: Website học lập trình hướng đối tượng C++ bằng tiếng Việt, hỗ trợ soạn thảo và chạy thử mã qua GCC. Chỉ chạy local, chưa triển khai hosting công khai. Link trỏ đúng repository oop-universe. Không đổi mô tả năm dự án cũ hoặc ngôn ngữ/khả năng của Hà.
+- README nêu Node.js/GCC, backend bind loopback, không phải sandbox cách ly; ghi kết quả tự báo cáo 15/24 ca kiểm thử đạt, còn lỗi chạy EXE trên Windows. Đợt này chỉ kiểm chứng mô tả từ README, không chạy lại ứng dụng hoặc kiểm thử GCC của Orbit Academy. Không tuyên bố toàn bộ runner đã đạt hoặc website đã deploy.
+- Giữ avatar CSS, năm chip và bố cục một trang 860px, cột trái 280px. Đã kiểm tra Chrome 1366×900, 768×900, 390×900, 320×900, đúng sáu dự án/URL, không tràn ngang. Đã xem screenshot desktop/mobile.
+
+### Mốc học vấn từ CV nguồn
+
+- Đã mở đọc lại đủ trang CV_Nguyen_Bac_Ha.pdf trong DuLieuNguon/ex09/BoSung. Phần học vấn chỉ ghi Đại học Thủy Lợi, CNTT/An ninh mạng, Sinh viên năm 2; không có năm nhập học, năm tốt nghiệp hay khoảng thời gian học.
+- Mốc Khoảng 09/2026 – nay thuộc dự án nghiên cứu khoa học, không phải học vấn. Không dùng mốc dự án, mã số sinh viên hoặc năm học hiện tại để suy ra năm nhập học.
+- Vì CV trước đây được xác nhận chưa cập nhật, không tự chuyển Sinh viên năm 2 thành khẳng định mới về thời điểm hiện tại. Giữ nguyên phần học vấn đã duyệt trong sản phẩm; không thêm ngày/năm thiếu căn cứ. CV gốc và bản duyệt vẫn ngoài Git.
+
+### Tối ưu ảnh Hạ Long ex11
+
+- Chỉ thay ex11/images/1-vinh-ha-long.jpg: từ 6.040.369 byte / 3000×2001 thành JPEG 104.307 byte / 900×600, chất lượng 82; giảm 98,27% dung lượng file hiện hành. Không cắt nội dung ảnh trong bước tối ưu; CSS gallery giữ nguyên.
+- Bản nguồn DuLieuNguon/ex11/BoSung/Vinh-Ha-Long-1.jpg giữ nguyên, hash SHA-256 trước/sau khớp. Không tối ưu lại hoặc thay các ảnh khác. Giới hạn: đây là nén JPEG có mất mát, không phải sao chép nguyên byte; bản 6 MB vẫn giữ local và trong lịch sử Git trước đó. Không tuyên bố đã làm nhỏ toàn bộ lịch sử repository.
+- Chrome ở bốn viewport nêu trên: cả sáu ảnh tải được, vẫn cao đúng 170px với object-fit:cover; ảnh Hạ Long có naturalWidth 900px, đủ hơn 2× chiều rộng ô gallery ở các kích thước thử. Đã xem ảnh tối ưu độc lập và ảnh trong gallery, không thấy tràn ngang. Giữ đúng thứ tự và chú thích sáu danh thắng.
+
+### Đối chiếu riêng ex07 đủ ba trang PDF
+
+| Trang PDF | Đối chiếu bản hiện có | Kết quả |
+| --- | --- | --- |
+| Trang 1 — tiêu đề, trọng tâm kỹ thuật, ảnh mẫu | Header + dải phụ, Grid 1fr 1px 1fr, ảnh Float phải; ảnh Double Rich do Hà cung cấp đúng thương hiệu | Qua kiểm tra kỹ thuật; không khẳng định trùng ảnh mẫu |
+| Trang 2 — nội dung và bảng thông số | Khung 860px trắng/shadow, header #C8102E chữ trắng/padding14px, dải phụ #FBE3E8 chữ đỏ/700/padding7px; đủ 3 mục, 200ml/400ml, điều kiện đối tượng và ba mốc 2005 đúng văn bản | Qua đối chiếu |
+| Trang 3 — quy chuẩn LMS | ex07/index.html, css/style.css, images/double-rich.jpg; tên sản phẩm tiếng Anh chữ thường; CSS ngoài, đường dẫn tương đối, không CSS inline | Đúng cấu trúc hiện hành |
+
+- Đã đọc lại văn bản và xem ảnh render của cả ba trang. Ảnh mẫu trang 1 có vị trí cột khác phần mô tả; giữ theo đặc tả cột và Grid được nêu rõ ở trang 1–2, không dựng lại trang.
+- Kiểm tra lại Chrome 1366×900, 768×900, 390×900, 320×900: khung desktop 860px, Grid 381.5px / 1px / 381.5px; ảnh 400×400 tải được, hiển thị đúng tỷ lệ, float:right và đúng cạnh trên/phải cột trái. Mobile chuyển một cột, không tràn ngang. Đã xem giao diện và xác minh nội dung/màu/thời hạn; không phát hiện lỗi mới cần sửa mã ex07.
+
+Chỉ sửa nội dung ex09 để thêm Orbit Academy, tối ưu một ảnh ex11 và cập nhật hồ sơ hỗ trợ/VERIFICATION. Không thay mã hay nội dung các bài khác; không sửa dữ liệu nguồn và không thao tác nộp LMS. Kết quả trình duyệt thuộc Chrome ở các viewport đã nêu; không thay cho chấm bài LMS hoặc kiểm thử đa trình duyệt.
