@@ -1,13 +1,18 @@
-﻿# Bộ sưu tập thực hành CSE122
+# Bộ sưu tập thực hành CSE122
 
-Mở index.html ở thư mục gốc bằng trình duyệt để chọn bài. Có thể mở trực tiếp exNN/index.html; không cần cài thư viện hoặc chạy server cho ex01–ex03.
+Mở index.html bằng trình duyệt. Các bài là HTML/CSS tĩnh, không cần cài thư viện.
 
-| Mã | Tên bài | Mã nguồn | Trạng thái |
-| --- | --- | --- | --- |
-| ex01 | Bốn mùa | [Mở bài](ex01/index.html) | Có mã nguồn; chờ đối chiếu đề |
-| ex02 | Hành trình Trung Hoa | [Mở bài](ex02/index.html) | Có mã nguồn và ảnh; chờ đối chiếu đề |
-| ex03 | Vịnh Hạ Long | [Mở bài](ex03/index.html) | Có mã nguồn và ảnh; chờ đối chiếu đề |
-| BTTH01 | Bài thực hành 01 | [Tài liệu](BTTH01/README.md) | Giữ nguyên; xem hướng dẫn riêng |
-| ex04 | Chờ đề | DuLieuNguon/ex04/ (local) | Chờ bổ sung |
+ex01–ex03: Hà xác nhận đã nộp lại; giữ nguyên. BTTH01 và bai01–bai03 giữ nguyên. ex07–ex08 chưa có đề, chưa thực hiện.
 
-Tài liệu đầu vào: xem [hướng dẫn](DuLieuNguon/README.md). Các thư mục bai01, bai02, bai03 được giữ nguyên theo lịch sử repository. Chưa có xác nhận nộp bài hoặc chấm đạt. Trạng thái đồng bộ xem lịch sử commit và GitHub; bảng trên không tự xác nhận kết quả kiểm thử giao diện.
+| Bài | Tên | Trạng thái |
+| --- | --- | --- |
+| ex04 | Đà Nẵng | Bố cục local đã kiểm tra; chờ da-nang.jpg |
+| ex05 | Hoa tươi Nhân Ái | Bố cục local đã kiểm tra; chờ Rose.gif (sản phẩm dùng rose.gif) |
+| ex06 | Các món ngon Hà Nội | Bố cục local đã kiểm tra; chờ Bat.gif (sản phẩm dùng bat.gif) |
+| ex09 | CV Online | Bố cục local; chờ CV và duyệt thông tin công khai; chưa push |
+| ex10 | Biểu mẫu liên hệ | Đã kiểm tra desktop/mobile; phiên bản Git xem lịch sử commit |
+| ex11 | Thư viện ảnh Việt Nam | Bố cục local đã kiểm tra; chờ 6 ảnh gốc |
+
+Mã nguồn local từng bài: exNN/index.html và exNN/css/style.css. Mở trực tiếp index.html của bài bằng trình duyệt. Bản nháp ex04, ex05, ex06, ex09, ex11 đang bị .gitignore loại khỏi Git cho đến khi đủ đầu vào và kiểm tra hoàn chỉnh. Chỉ ex10 có mã nguồn mới trên GitHub trong đợt này.
+
+[Hướng dẫn và kiểm kê tài liệu](DuLieuNguon/README.md). [Kết quả kiểm tra](VERIFICATION.md). Push không đồng nghĩa nộp LMS hoặc chấm đạt.
