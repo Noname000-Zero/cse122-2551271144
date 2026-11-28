@@ -1,14 +1,16 @@
-﻿# Đối chiếu sáu bài thực hành — 28/11/2026
+﻿# Đối chiếu bộ sưu tập thực hành — 28/11/2026
 
 ## Kết quả hiện hành
 
-Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy tắc cá nhân 2.4, DuLieuNguon/Chung/README.md, toàn bộ 18 trang của sáu PDF và quy chuẩn cuối từng PDF. Đúng repository Noname000-Zero/cse122-2551271144, nhánh main. Sản phẩm dùng exNN/index.html, CSS ngoài css/style.css, ảnh nội bộ images/; bỏ đường dẫn cũ trong đề.
+Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy tắc cá nhân 2.4, DuLieuNguon/Chung/README.md, toàn bộ 24 trang của tám PDF (04–11) và quy chuẩn cuối từng PDF. Đúng repository Noname000-Zero/cse122-2551271144, nhánh main. Sản phẩm dùng exNN/index.html, CSS ngoài css/style.css, ảnh nội bộ images/; bỏ đường dẫn cũ trong đề.
 
 | Bài | Kết quả kỹ thuật / nội dung | Đồng bộ |
 | --- | --- | --- |
 | ex04 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác ảnh gốc PDF | Thuộc đợt commit/push này |
 | ex05 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác Rose.gif gốc | Thuộc đợt commit/push này |
 | ex06 | Đã kiểm tra, đủ 8 món và có ảnh thật do Hà bổ sung; khác Bat.gif gốc | Thuộc đợt commit/push này |
+| ex07 | Có nội dung và bố cục bản nháp, thiếu 1 ảnh Double Rich | Chỉ local, chưa hoàn thành, chưa commit/push |
+| ex08 | Hoàn thiện 7 bài/7 ảnh thay thế có nguồn, tác giả, giấy phép; Du lịch theo quyết định Hà | Đã kiểm tra desktop/mobile, thuộc đợt đồng bộ này |
 | ex09 | Hà đã duyệt công khai; kiểm tra cuối theo đề và nội dung đã duyệt | Được commit/push trong đợt chốt ex09 |
 | ex10 | Đã kiểm tra đủ yêu cầu HTML5 Form và mô phỏng gửi/reset | Đã có trên GitHub; không sửa mã trong đợt này |
 | ex11 | Đã kiểm tra đủ 6 ảnh theo danh thắng và thứ tự, nguồn ảnh 6 có ghi công | Thuộc đợt commit/push hiện tại |
@@ -105,7 +107,7 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 - ex09 đã được Hà duyệt công khai; TryHackMe từng trả HTTP 429 khi kiểm tra, nên chưa xác nhận truy cập thành công trang đích.
 - ex11 đã đủ sáu ảnh và được bỏ ignore riêng bài để đồng bộ; nguồn ảnh 6 và giới hạn nhận diện ảnh mới được ghi rõ phía trên.
 - Mới kiểm tra Chrome ở ba kích thước nêu trên; chưa thử mọi trình duyệt/thiết bị, chưa có kết quả chấm LMS.
-- Đề/CV gốc, README BoSung và ghi chú duyệt cá nhân không nằm trong commit. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên; ex07–ex08 chưa có đề, không thực hiện; không thao tác LMS.
+- Đề/CV gốc, README BoSung và ghi chú duyệt cá nhân không nằm trong commit. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên; ex07–ex08 có đề mới và bản nháp, xem kết quả bổ sung phía cuối; không thao tác LMS.
 
 ## Bổ sung đã kiểm tra trong đợt cập nhật ex11 và CV
 
@@ -122,4 +124,53 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 - Kiểm tra cuối Chrome ở 1366×900, 768×900, 390×900: khung 860px và cột 280px/580px ở desktop; avatar CSS 110×110px/flex/50%; đúng 5 chip, đúng 5 URL dự án được đối chiếu; không ảnh chân dung, không thư viện ngoài, không CSS inline; không tràn ngang. Đã xem ảnh chụp desktop/mobile sau khi bỏ thông báo chờ duyệt.
 - Giữ nội dung cá nhân hóa Hà duyệt thay nhân vật mẫu; không tự suy ra năm học, địa chỉ hoặc năng lực ngôn ngữ. Chuẩn độ và PhysicsSim được ghi rõ dự án nhóm; phần phối hợp AI được mô tả đúng xác nhận.
 - Mục lục có liên kết ex09; các đường dẫn local tồn tại. CV PDF gốc giữ nguyên hash và bị ignore; commit không chứa PDF, publication-review.md hoặc thư mục nguồn riêng tư.
-- Các bài mới đã hoàn thiện và có mã nguồn local/GitHub: ex04, ex05, ex06, ex09, ex10, ex11. ex01–ex03 giữ nguyên và Hà đã xác nhận nộp lại trước đó. BTTH01 giữ nguyên; ex07–ex08 chưa có đề. Không thao tác nộp LMS, không xác nhận chấm đạt.
+- Các bài mới đã hoàn thiện và có mã nguồn local/GitHub: ex04, ex05, ex06, ex09, ex10, ex11. ex01–ex03 giữ nguyên và Hà đã xác nhận nộp lại trước đó. BTTH01 giữ nguyên; ex07–ex08 đã có đề mới, hiện là bản nháp thiếu tài nguyên. Không thao tác nộp LMS, không xác nhận chấm đạt.
+
+## Ex07 và ex08 — triển khai theo hai PDF mới
+
+Đã đọc đủ 6 trang (mỗi bài 3 trang), gồm ảnh mẫu và trang quy chuẩn cuối. Sản phẩm local có exNN/index.html, exNN/css/style.css, exNN/images/. ex07/images còn trống và bản nháp bị ignore; ex08/images hiện có 7 tệp ảnh thật được cấp phép, không hotlink hoặc img lỗi. Không sửa các bài khác hoặc BTTH01.
+
+### ex07 — kết quả từng tiêu chí
+
+| Tiêu chí | Bằng chứng / trạng thái |
+| --- | --- |
+| Khung và hai dải tiêu đề | Đã kiểm tra phần có thể thực hiện: khung 860px, nền trắng, shadow 0 12px 30px rgba(0,0,0,.15); header #C8102E, chữ trắng, padding 14px; dải phụ #FBE3E8/#C8102E, font-weight 700, padding 7px; đúng văn bản |
+| Kỹ thuật chia cột | Grid 1fr 1px 1fr, desktop đo 381.5px / 1px / 381.5px; vạch giữa rõ. Mobile xếp dọc, vạch ngang phân cách. Làm theo đặc tả chữ, không lặp lỗi vị trí cột bị rơi trong ảnh mẫu |
+| Nội dung | Đủ Sản phẩm khuyến mãi / Đối tượng tham gia ở trái, Cách thức nhận giải ở phải; đúng 200ml/400ml, hai điều kiện đối tượng, các mốc 15/06/2005, 17h ngày 12/08/2005, trước 31/07/2005 và dấu bưu điện |
+| Ảnh nổi góc phải | CSS float:right cho class ảnh đã có, hiện chỉ div chờ ảnh Double Rich. Chưa kiểm tra ảnh thật, tỷ lệ hoặc độ khớp mẫu; chưa đạt phần ảnh |
+
+**Chưa hoàn thành ex07**: cần 1 ảnh Double Rich tại H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex07\BoSung. Tên đề nghị double-rich.jpg; nhận JPG/PNG/WebP đúng nội dung, không cần đổi tên nguồn.
+
+### ex08 — kết quả từng tiêu chí
+
+| Tiêu chí | Bằng chứng / trạng thái |
+| --- | --- |
+| Sidebar + nội dung | Grid 210px 1fr; desktop đo 210px / 790px. Tiêu đề Ai? Cái gì? Ở đâu? …; màu thanh chuyên mục #1668C1, chữ trắng |
+| 7 bài đúng thứ tự | Trầu cau; Xây dựng hạnh phúc gia đình qua những bữa cơm hàng ngày; 10 lời khuyên trong dinh dưỡng; Làm sao để bỏ thuốc lá?; Các món ăn dân dã; Nhạc thiếu nhi; Dân ca. Đoạn tóm tắt chép từ ảnh mẫu, không tự tạo bài viết dài hoặc thêm dữ kiện |
+| Lưới từng bài | Đã kiểm tra: nội dung trái, 7 ảnh thật rộng 140px bên phải desktop, height:auto đúng tỷ lệ; mobile xếp dọc; không còn vùng chờ ảnh |
+| Neo và cuộn mượt | Có đủ 5 nav link trỏ id tồn tại, mỗi chuyên mục có Về đầu trang trỏ #top. html scroll-behavior:smooth; có tôn trọng prefers-reduced-motion. Đã bấm thật cả 5 link và 5 lần quay về đầu trang ở desktop/mobile, hash và vị trí cuộn đúng |
+| Du lịch — quyết định Hà | Giữ neo hoạt động và thông báo ngắn “Chuyên mục Du lịch chưa có nội dung trong đề.” Không thêm article, không tính thành bài thứ tám; không còn chờ hướng dẫn bổ sung |
+
+**Ex08 đã hoàn thiện theo phạm vi Hà chốt**: tự tìm và lưu 7 ảnh thay thế vào BoSung, sao chép sang images với tên tiếng Anh chữ thường. Nguồn, tác giả, giấy phép và URL tải ghi ở ex08/assets.md (public), DuLieuNguon/ex08/BoSung/sources.md và assets.json (local). Không khẳng định khớp tuyệt đối ảnh mẫu.
+
+### Phép thử và giới hạn hiện tại
+
+Chrome headless/Playwright: 1366×900, 768×900, 390×900, 320×900, đã chụp và xem desktop/mobile. Không tràn ngang, không lỗi JavaScript; CSS ngoài nạp được, HTML không CSS inline; tham chiếu tệp CSS tương đối có thật, không dùng CDN/thư viện ngoài hoặc phụ thuộc bài khác. Đã đo thông số nêu trên và thử neo thực tế. Hai PDF nguồn giữ nguyên hash SHA-256.
+
+Ex07 chưa có ảnh nên chưa kiểm tra tải/cắt/tỷ lệ hoặc so mẫu hoàn chỉnh; chỉ giữ local. Ex08 đã được bổ sung ảnh và thử lại theo kết quả dưới đây; được bỏ ignore để commit/push riêng. Không thao tác nộp LMS.
+
+## Hoàn thiện ex08 với tài nguyên tự tìm theo yêu cầu Hà
+
+- Đã kiểm kê repository và bản repository cũ; không có bộ ảnh/ZIP bài 07–08. ZIP local PhysicsSim_KhoDuLieu_ChoCodex.zip không có entry phù hợp tên tài nguyên của đề; không trích xuất hoặc sửa nguồn.
+- Đã dùng Commons API để đọc mô tả, tác giả, giấy phép và URL tệp; tải ảnh vào BoSung, kiểm tra Content-Type image/jpeg hoặc image/png, giải mã kích thước và mở từng ảnh để xem nội dung. Chọn 7 ảnh đúng chủ đề. Ứng viên ảnh thiếu nhi mờ bị loại khỏi sản phẩm và được giữ nguyên trong nguồn.
+- Tác giả/giấy phép: Eraheem (CC BY-SA 3.0), BigBrotherMouse (CC BY-SA 3.0), juliette.dnl (CC BY 4.0), AIGA (Public domain theo trang nguồn), Christophe95 (CC BY-SA 4.0), ashbrookeMEDIA (CC BY 2.0), Chrisvomberg (CC BY-SA 3.0). URL nguồn và tải trực tiếp ghi trong ex08/assets.md; trang có mục ghi công mở rộng bằng details/summary.
+- Ảnh minh họa theo chủ đề: ảnh trầu/cau theo văn hóa Nam Á; ảnh gia đình tại Lào; ảnh thiếu nhi là dàn hợp xướng Watoto. Không nhận là nhân vật/địa điểm Việt Nam hoặc ảnh đúng bài hát. Ảnh dân ca là biểu diễn Quan họ. Không khẳng định trùng ảnh gốc của đề.
+- Không chỉnh nội dung tệp; dùng bản thumbnail do Wikimedia cung cấp và sao chép nguyên byte từ BoSung sang images. SHA-256 nguồn/bản sao của cả 7 ảnh khớp. Không ảnh nào tải từ website bên ngoài khi chạy trang; liên kết ngoài chỉ dành cho nguồn và giấy phép.
+- Đã kiểm tra Chrome 1366×900, 768×900, 390×900, 320×900: tất cả 7 ảnh tải được, rộng đúng 140px, tỷ lệ hiển thị khớp tỷ lệ gốc; đủ 7 article và đúng thứ tự tiêu đề. Sidebar 210px desktop; menu 5 neo; 5 link về đầu trang; cuộn mượt. Đã bấm mọi neo và link về đầu trang ở cả bốn kích thước. Ghi công mở/đóng được, nội dung không tràn ngang kể cả khi mở. Đã xem ảnh chụp desktop/mobile, không lỗi JavaScript hoặc CSS inline.
+- Hai PDF gốc giữ nguyên hash. Không sửa ex01–ex06, ex09–ex11 hoặc BTTH01. Mục lục công khai không tạo link tới ex07 chưa có trên remote.
+
+### Ex07 còn thiếu chính xác
+
+Chưa tìm được **1 ảnh dầu gội Double Rich đúng thương hiệu và có quyền tái sử dụng rõ ràng**. Đã tìm ứng viên https://www.flickr.com/photos/21158869@N06/5234049409 — DOUBLE RICH Green Tea SHAMPOO - 40K, chủ tài khoản theo URL 21158869@N06, nhưng trang ghi All rights reserved / license:0; không đưa ảnh đó vào bài. Tìm Commons chưa có ứng viên đạt; OpenBeautyFacts API không truy cập được nên không khẳng định đã kiểm tra toàn cơ sở dữ liệu này. Không coi việc ảnh xuất hiện trên mạng là quyền tái phân phối.
+
+Nội dung/CSS và bố cục ex07 đã được kiểm tra ở bốn độ rộng trong đợt trước, không đổi mã trong đợt tìm ảnh này. Vùng chờ ảnh vẫn còn; chưa hoàn thành, không commit/push ex07. Nơi có thể nhận ảnh tự chụp hoặc ảnh kèm quyền sử dụng: H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex07\BoSung. Không có bước nộp LMS trong nhiệm vụ này.
