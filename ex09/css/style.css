@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 32px 20px;
+  font:
+    16px/1.65 "Times New Roman",
+    serif;
+  color: #222;
+}
+main {
+  max-width: 860px;
+  margin: auto;
+}
+h1 {
+  font-size: 26px;
+  line-height: 1.3;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+.missing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  background: #f1f3f5;
+  color: #56616f;
+  border: 1px dashed #aab2bd;
+  text-align: center;
+  padding: 16px;
+}
+body {
+  background: #edf2fa;
+  font-family: Arial, sans-serif;
+}
+main {
+  max-width: 860px;
+}
+.cv {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 12px 25px #0002;
+}
+aside {
+  background: linear-gradient(180deg, #1565c0, #0d3f7a);
+  color: white;
+  padding: 28px 22px;
+}
+aside h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+aside p {
+  text-align: center;
+  margin-top: 0;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.avatar {
+  width: 110px;
+  height: 110px;
+  background: white;
+  color: #1565c0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bold;
+}
+.details {
+  padding: 24px 28px;
+  min-width: 0;
+}
+h2 {
+  font-size: 18px;
+  color: #1565c0;
+  border-bottom: 2px solid #e3ebf5;
+}
+.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+}
+.chips li {
+  border-radius: 999px;
+  background: #e3efff;
+  color: #1565c0;
+  padding: 3px 12px;
+  font-size: 13px;
+}
+@media (max-width: 650px) {
+  .cv {
+    grid-template-columns: 1fr;
+  }
+}
+
+aside a {
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+.details a {
+  color: #1565c0;
+  overflow-wrap: anywhere;
+}
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.projects {
+  padding-left: 20px;
+}
+.projects li {
+  margin-bottom: 12px;
+}
+.projects a {
+  font-weight: bold;
+}

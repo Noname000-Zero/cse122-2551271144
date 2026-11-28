@@ -9,7 +9,7 @@ Chung/: quy định dùng chung. exNN/: đề, mẫu, phản hồi; BoSung/ bên
 - ex04: nhận 1 PNG Đà Nẵng, sao chép sang ex04/images/da-nang.png.
 - ex05: nhận 1 JPG hoa hồng, sao chép sang ex05/images/rose.jpg.
 - ex06: nhận 1 JPG tô món ăn, sao chép sang ex06/images/bowl.jpg.
-- ex09: đã đọc CV tham khảo; bản dự kiến công khai chỉ lưu local trong ex09/BoSung/publication-review.md, đã bổ sung năm dự án theo xác nhận mới và đối chiếu repository công khai, chờ Hà duyệt.
+- ex09: đã đọc CV tham khảo; bản dự kiến công khai chỉ lưu local trong ex09/BoSung/publication-review.md, đã bổ sung năm dự án theo xác nhận mới và đối chiếu repository công khai, đã được Hà duyệt công khai; sản phẩm ex09 được đồng bộ, CV PDF và bản duyệt gốc vẫn chỉ lưu local.
 - ex11: đã mở ảnh hang động mới (images.jpg), nhưng chưa xác minh được địa danh từ nguồn ảnh. Giữ nguyên tài nguyên; dùng ảnh Động Phong Nha của Tonguc Ozluk trên Wikimedia Commons (CC BY-SA 4.0), có nguồn/ghi công tại ex11/README.md. Sáu ảnh đã đủ, không còn vùng chờ.
 - ex10: không cần ảnh. ex07/ex08: chưa có đề.
 

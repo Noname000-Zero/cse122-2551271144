@@ -9,7 +9,7 @@ Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy t
 | ex04 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác ảnh gốc PDF | Thuộc đợt commit/push này |
 | ex05 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác Rose.gif gốc | Thuộc đợt commit/push này |
 | ex06 | Đã kiểm tra, đủ 8 món và có ảnh thật do Hà bổ sung; khác Bat.gif gốc | Thuộc đợt commit/push này |
-| ex09 | Đã cập nhật giới thiệu và 5 dự án theo xác nhận của Hà; kiểm tra local, chờ duyệt | Chưa commit/push, vẫn ignore |
+| ex09 | Hà đã duyệt công khai; kiểm tra cuối theo đề và nội dung đã duyệt | Được commit/push trong đợt chốt ex09 |
 | ex10 | Đã kiểm tra đủ yêu cầu HTML5 Form và mô phỏng gửi/reset | Đã có trên GitHub; không sửa mã trong đợt này |
 | ex11 | Đã kiểm tra đủ 6 ảnh theo danh thắng và thứ tự, nguồn ảnh 6 có ghi công | Thuộc đợt commit/push hiện tại |
 
@@ -70,14 +70,14 @@ Chrome headless qua Playwright, desktop 1366×900, tablet 768×900 và mobile 39
 
 | Tiêu chí theo đề | Bằng chứng / kết luận |
 | --- | --- |
-| Khung và Grid | Đạt bố cục local: 860px, desktop 280px / 580px; bo 12px; mobile một cột |
+| Khung và Grid | Đạt bố cục: 860px, desktop 280px / 580px; bo 12px; mobile một cột |
 | Avatar CSS / cột trái | Đạt: chữ viết tắt từ tên CV, không ảnh chân dung; 110×110px, flex căn giữa, border-radius:50%, nền trắng/chữ #1565C0; aside gradient #1565C0 → #0D3F7A |
 | Năm chip | Đủ 5 chip border-radius:999px, nội dung rút gọn từ năng lực/công cụ ghi trong CV; không lấy năm kỹ năng nhân vật mẫu làm năng lực của Hà |
 | Nội dung cá nhân hóa | Đã dùng phần giới thiệu, học vấn, liên hệ và hai URL có trong CV. Không thêm thành tích/chứng chỉ/số liệu; không tự điền địa chỉ, năm nhập học, GitHub/Facebook/LinkedIn còn thiếu |
 | Liên kết | mailto/tel đúng cú pháp và giá trị từ CV; không thực hiện gửi thư/gọi điện. URL dự án trả HTTP 200. TryHackMe trả 429, chưa xác minh truy cập thành công trang đích; không coi 429 là link chết |
-| Quyền công khai | Bản local có thông báo chờ duyệt; danh sách giá trị cụ thể lưu trong DuLieuNguon/ex09/BoSung/publication-review.md. Chưa push ex09; tài liệu báo cáo công khai này không liệt kê giá trị liên hệ riêng tư |
+| Quyền công khai | Hà đã duyệt nội dung publication-review.md ngày 28/11/2026; đã bỏ thông báo chờ duyệt trên trang. Chỉ công khai HTML/CSS sản phẩm; CV gốc và bản duyệt tiếp tục bị Git bỏ qua |
 
-CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nhận định trong CV. Không dùng mốc “năm 2” để suy ra năm học hiện tại vì CV chưa cập nhật. Không đưa hoạt động riêng tư ngoài phần bài cần dùng. Chờ Hà duyệt danh sách công khai trước khi bỏ ignore/commit/push ex09. Không cần bổ sung ảnh.
+CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nhận định trong CV. Không dùng mốc “năm 2” để suy ra năm học hiện tại vì CV chưa cập nhật. Không đưa hoạt động riêng tư ngoài phần bài cần dùng. Hà đã duyệt danh sách công khai; đã bỏ ignore riêng sản phẩm ex09 để commit/push. Không cần bổ sung ảnh.
 
 ### ex10
 
@@ -102,7 +102,7 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 ## Giới hạn và bước còn lại
 
 - ex04–ex06 đạt kiểm tra mã, nội dung và ảnh mới cung cấp; không đạt mức ảnh trùng tuyệt đối với mẫu PDF. Nếu giảng viên bắt buộc đúng ảnh gốc, cần bộ ảnh gốc tương ứng.
-- ex09 chờ duyệt thông tin công khai; TryHackMe đang giới hạn truy cập kiểm tra (HTTP 429). Bản local đã sẵn để xem.
+- ex09 đã được Hà duyệt công khai; TryHackMe từng trả HTTP 429 khi kiểm tra, nên chưa xác nhận truy cập thành công trang đích.
 - ex11 đã đủ sáu ảnh và được bỏ ignore riêng bài để đồng bộ; nguồn ảnh 6 và giới hạn nhận diện ảnh mới được ghi rõ phía trên.
 - Mới kiểm tra Chrome ở ba kích thước nêu trên; chưa thử mọi trình duyệt/thiết bị, chưa có kết quả chấm LMS.
 - Đề/CV gốc, README BoSung và ghi chú duyệt cá nhân không nằm trong commit. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên; ex07–ex08 chưa có đề, không thực hiện; không thao tác LMS.
@@ -111,7 +111,15 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 
 - Mở ảnh mới trong BoSung; dùng ảnh Phong Nha có nguồn địa danh/giấy phép rõ ràng thay vì khẳng định danh tính của ảnh chưa xác minh. Đã xem lại cả sáu ảnh trên trang theo thứ tự Vịnh Hạ Long → Sơn Đoòng → Thác Bản Giốc → Fansipan → Đồng bằng sông Cửu Long → Động Phong Nha.
 - Ex11: thử lại Chrome 1366×900, 768×900, 390×900; đủ sáu figure/img/figcaption, không vùng chờ, tất cả ảnh tải được, cao đúng 170px/cover, gap 18px, ba cột desktop và một cột mobile; xem ảnh chụp desktop/mobile, không tràn ngang.
-- Ex09 local: giữ khung 860px, cột trái 280px, avatar CSS và năm chip. Bổ sung một mục dự án gồm đúng năm liên kết repository, vẫn là một trang CV, không thêm thư viện hoặc trang con. Đã kiểm tra ba viewport, không tràn ngang.
+- Ex09: giữ khung 860px, cột trái 280px, avatar CSS và năm chip. Bổ sung một mục dự án gồm đúng năm liên kết repository, vẫn là một trang CV, không thêm thư viện hoặc trang con. Đã kiểm tra ba viewport, không tràn ngang.
 - Đã đọc metadata và README công khai: Quangbk47/acid-base-titration-simulator; Noname000-Zero/classical-cryptography-learning-lab; Noname000-Zero/cse122-physicssim; Noname000-Zero/konoha-network-academy; README bộ sưu tập CSE122 hiện hành. URL đều truy xuất được bằng GitHub API; không suy năng lực cá nhân từ ngôn ngữ hoặc chủ sở hữu repo. README là căn cứ mô tả sản phẩm; phần đóng góp cá nhân dựa xác nhận của Hà.
 - Giới thiệu CV nêu rõ AI hỗ trợ triển khai, Hà xác định yêu cầu, kiểm tra kết quả và điều chỉnh. Dự án chuẩn độ và PhysicsSim ghi là dự án nhóm; không nhận dự án Quangbk47 là cá nhân. Không thêm thành tích/số người dùng/số liệu mới, không tuyên bố thành thạo ngôn ngữ.
-- Nội dung thay đổi và thông tin công khai dự kiến được lưu local trong publication-review.md để Hà xem trước. Ex09 tiếp tục bị ignore, không được commit/push cùng ex11. CV PDF gốc ngoài Git.
+- publication-review.md đã được Hà duyệt trong đợt chốt ex09; chỉ sản phẩm được bỏ ignore và đồng bộ. CV PDF và bản duyệt gốc vẫn ngoài Git.
+
+## Chốt công khai ex09 sau khi Hà duyệt
+
+- Hà đã cho phép công khai nội dung bản duyệt; không cần cấp quyền lại. Bỏ thông báo chờ duyệt trên trang, không thêm thông tin cá nhân mới.
+- Kiểm tra cuối Chrome ở 1366×900, 768×900, 390×900: khung 860px và cột 280px/580px ở desktop; avatar CSS 110×110px/flex/50%; đúng 5 chip, đúng 5 URL dự án được đối chiếu; không ảnh chân dung, không thư viện ngoài, không CSS inline; không tràn ngang. Đã xem ảnh chụp desktop/mobile sau khi bỏ thông báo chờ duyệt.
+- Giữ nội dung cá nhân hóa Hà duyệt thay nhân vật mẫu; không tự suy ra năm học, địa chỉ hoặc năng lực ngôn ngữ. Chuẩn độ và PhysicsSim được ghi rõ dự án nhóm; phần phối hợp AI được mô tả đúng xác nhận.
+- Mục lục có liên kết ex09; các đường dẫn local tồn tại. CV PDF gốc giữ nguyên hash và bị ignore; commit không chứa PDF, publication-review.md hoặc thư mục nguồn riêng tư.
+- Các bài mới đã hoàn thiện và có mã nguồn local/GitHub: ex04, ex05, ex06, ex09, ex10, ex11. ex01–ex03 giữ nguyên và Hà đã xác nhận nộp lại trước đó. BTTH01 giữ nguyên; ex07–ex08 chưa có đề. Không thao tác nộp LMS, không xác nhận chấm đạt.
