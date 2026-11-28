@@ -9,7 +9,7 @@ Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy t
 | ex04 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác ảnh gốc PDF | Thuộc đợt commit/push này |
 | ex05 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác Rose.gif gốc | Thuộc đợt commit/push này |
 | ex06 | Đã kiểm tra, đủ 8 món và có ảnh thật do Hà bổ sung; khác Bat.gif gốc | Thuộc đợt commit/push này |
-| ex07 | Có nội dung và bố cục bản nháp, thiếu 1 ảnh Double Rich | Chỉ local, chưa hoàn thành, chưa commit/push |
+| ex07 | Đã nhận ảnh Double Rich Hà bổ sung; nội dung, bố cục và ảnh thật đã kiểm tra cuối | Thuộc đợt đồng bộ ex07 hiện tại |
 | ex08 | Hoàn thiện 7 bài/7 ảnh thay thế có nguồn, tác giả, giấy phép; Du lịch theo quyết định Hà | Đã kiểm tra desktop/mobile, thuộc đợt đồng bộ này |
 | ex09 | Hà đã duyệt công khai; kiểm tra cuối theo đề và nội dung đã duyệt | Được commit/push trong đợt chốt ex09 |
 | ex10 | Đã kiểm tra đủ yêu cầu HTML5 Form và mô phỏng gửi/reset | Đã có trên GitHub; không sửa mã trong đợt này |
@@ -128,7 +128,7 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 
 ## Ex07 và ex08 — triển khai theo hai PDF mới
 
-Đã đọc đủ 6 trang (mỗi bài 3 trang), gồm ảnh mẫu và trang quy chuẩn cuối. Sản phẩm local có exNN/index.html, exNN/css/style.css, exNN/images/. ex07/images còn trống và bản nháp bị ignore; ex08/images hiện có 7 tệp ảnh thật được cấp phép, không hotlink hoặc img lỗi. Không sửa các bài khác hoặc BTTH01.
+Đã đọc đủ 6 trang (mỗi bài 3 trang), gồm ảnh mẫu và trang quy chuẩn cuối. Sản phẩm local có exNN/index.html, exNN/css/style.css, exNN/images/. ex07/images có ảnh Double Rich mới Hà cung cấp; ex08/images có 7 tệp ảnh thật được cấp phép; không hotlink hoặc img lỗi. Không sửa các bài khác hoặc BTTH01.
 
 ### ex07 — kết quả từng tiêu chí
 
@@ -137,9 +137,9 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 | Khung và hai dải tiêu đề | Đã kiểm tra phần có thể thực hiện: khung 860px, nền trắng, shadow 0 12px 30px rgba(0,0,0,.15); header #C8102E, chữ trắng, padding 14px; dải phụ #FBE3E8/#C8102E, font-weight 700, padding 7px; đúng văn bản |
 | Kỹ thuật chia cột | Grid 1fr 1px 1fr, desktop đo 381.5px / 1px / 381.5px; vạch giữa rõ. Mobile xếp dọc, vạch ngang phân cách. Làm theo đặc tả chữ, không lặp lỗi vị trí cột bị rơi trong ảnh mẫu |
 | Nội dung | Đủ Sản phẩm khuyến mãi / Đối tượng tham gia ở trái, Cách thức nhận giải ở phải; đúng 200ml/400ml, hai điều kiện đối tượng, các mốc 15/06/2005, 17h ngày 12/08/2005, trước 31/07/2005 và dấu bưu điện |
-| Ảnh nổi góc phải | CSS float:right cho class ảnh đã có, hiện chỉ div chờ ảnh Double Rich. Chưa kiểm tra ảnh thật, tỷ lệ hoặc độ khớp mẫu; chưa đạt phần ảnh |
+| Ảnh nổi góc phải | Đạt kiểm tra thực tế: ảnh JPEG Double Rich 400×400, hiển thị 140×140 desktop/mobile 390px và 110×110 tại 320px; float:right, đo đúng góc phải/trên cột trái, không méo; không còn vùng chờ |
 
-**Chưa hoàn thành ex07**: cần 1 ảnh Double Rich tại H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex07\BoSung. Tên đề nghị double-rich.jpg; nhận JPG/PNG/WebP đúng nội dung, không cần đổi tên nguồn.
+**Ex07 đã hoàn thiện với tài nguyên mới Hà cung cấp**: đã nhận double-rich.jpg, mở ảnh thực tế nhận diện sản phẩm đúng thương hiệu, sao chép nguyên byte sang images/double-rich.jpg và kiểm tra desktop/mobile. Không khẳng định ảnh trùng tuyệt đối ảnh gốc PDF.
 
 ### ex08 — kết quả từng tiêu chí
 
@@ -157,7 +157,7 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 
 Chrome headless/Playwright: 1366×900, 768×900, 390×900, 320×900, đã chụp và xem desktop/mobile. Không tràn ngang, không lỗi JavaScript; CSS ngoài nạp được, HTML không CSS inline; tham chiếu tệp CSS tương đối có thật, không dùng CDN/thư viện ngoài hoặc phụ thuộc bài khác. Đã đo thông số nêu trên và thử neo thực tế. Hai PDF nguồn giữ nguyên hash SHA-256.
 
-Ex07 chưa có ảnh nên chưa kiểm tra tải/cắt/tỷ lệ hoặc so mẫu hoàn chỉnh; chỉ giữ local. Ex08 đã được bổ sung ảnh và thử lại theo kết quả dưới đây; được bỏ ignore để commit/push riêng. Không thao tác nộp LMS.
+Ex07 đã nhận ảnh mới và hoàn tất kiểm tra tải ảnh/tỷ lệ, không còn giữ ở trạng thái thiếu ảnh. Ex08 đã được bổ sung ảnh và thử lại theo kết quả dưới đây; được bỏ ignore để commit/push riêng. Không thao tác nộp LMS.
 
 ## Hoàn thiện ex08 với tài nguyên tự tìm theo yêu cầu Hà
 
@@ -167,10 +167,19 @@ Ex07 chưa có ảnh nên chưa kiểm tra tải/cắt/tỷ lệ hoặc so mẫu
 - Ảnh minh họa theo chủ đề: ảnh trầu/cau theo văn hóa Nam Á; ảnh gia đình tại Lào; ảnh thiếu nhi là dàn hợp xướng Watoto. Không nhận là nhân vật/địa điểm Việt Nam hoặc ảnh đúng bài hát. Ảnh dân ca là biểu diễn Quan họ. Không khẳng định trùng ảnh gốc của đề.
 - Không chỉnh nội dung tệp; dùng bản thumbnail do Wikimedia cung cấp và sao chép nguyên byte từ BoSung sang images. SHA-256 nguồn/bản sao của cả 7 ảnh khớp. Không ảnh nào tải từ website bên ngoài khi chạy trang; liên kết ngoài chỉ dành cho nguồn và giấy phép.
 - Đã kiểm tra Chrome 1366×900, 768×900, 390×900, 320×900: tất cả 7 ảnh tải được, rộng đúng 140px, tỷ lệ hiển thị khớp tỷ lệ gốc; đủ 7 article và đúng thứ tự tiêu đề. Sidebar 210px desktop; menu 5 neo; 5 link về đầu trang; cuộn mượt. Đã bấm mọi neo và link về đầu trang ở cả bốn kích thước. Ghi công mở/đóng được, nội dung không tràn ngang kể cả khi mở. Đã xem ảnh chụp desktop/mobile, không lỗi JavaScript hoặc CSS inline.
-- Hai PDF gốc giữ nguyên hash. Không sửa ex01–ex06, ex09–ex11 hoặc BTTH01. Mục lục công khai không tạo link tới ex07 chưa có trên remote.
+- Hai PDF gốc giữ nguyên hash. Không sửa ex01–ex06, ex09–ex11 hoặc BTTH01. Mục lục công khai đã bổ sung link ex07 khi sản phẩm được đưa vào đợt đồng bộ hiện tại.
 
-### Ex07 còn thiếu chính xác
+### Lịch sử tìm ảnh ex07 — đã được giải quyết bằng nguồn mới
 
-Chưa tìm được **1 ảnh dầu gội Double Rich đúng thương hiệu và có quyền tái sử dụng rõ ràng**. Đã tìm ứng viên https://www.flickr.com/photos/21158869@N06/5234049409 — DOUBLE RICH Green Tea SHAMPOO - 40K, chủ tài khoản theo URL 21158869@N06, nhưng trang ghi All rights reserved / license:0; không đưa ảnh đó vào bài. Tìm Commons chưa có ứng viên đạt; OpenBeautyFacts API không truy cập được nên không khẳng định đã kiểm tra toàn cơ sở dữ liệu này. Không coi việc ảnh xuất hiện trên mạng là quyền tái phân phối.
+Trước khi Hà bổ sung, ứng viên Flickr https://www.flickr.com/photos/21158869@N06/5234049409 ghi All rights reserved / license:0 nên không sử dụng. Kết quả này không phải trạng thái tài nguyên mới. Không tải hoặc thay đổi ảnh Flickr đó.
 
-Nội dung/CSS và bố cục ex07 đã được kiểm tra ở bốn độ rộng trong đợt trước, không đổi mã trong đợt tìm ảnh này. Vùng chờ ảnh vẫn còn; chưa hoàn thành, không commit/push ex07. Nơi có thể nhận ảnh tự chụp hoặc ảnh kèm quyền sử dụng: H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex07\BoSung. Không có bước nộp LMS trong nhiệm vụ này.
+## Hoàn thiện ex07 sau kiểm kê tài nguyên mới
+
+- Kiểm kê mới toàn bộ tệp đệ quy (không lọc tên hoặc định dạng): H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex07\BoSung có double-rich.jpg, README.md, resource-search.md; không có tệp ảnh khác trong các thư mục con.
+- Đã mở double-rich.jpg để xem: hai sản phẩm Double Rich màu đỏ, có chai dầu gội. Xác minh chữ ký JPEG, kích thước 400×400, 16.592 byte. Giữ nguyên bản nguồn; bản sao ex07/images/double-rich.jpg có cùng SHA-256 trước/sau.
+- Ảnh do Hà cung cấp và yêu cầu sử dụng để hoàn thiện/commit/push. Không có URL tác giả/giấy phép mở đi kèm nên không tự gán giấy phép CC; hồ sơ nguồn ở ex07/assets.md. Không tuyên bố trùng tuyệt đối ảnh gốc PDF.
+- Thay đúng vùng chờ bằng img có alt; xóa CSS chỉ dành cho vùng chờ. Giữ toàn bộ văn bản theo đề, cấu trúc HTML/CSS ngoài và Grid 1fr 1px 1fr; bỏ ignore riêng sản phẩm ex07, tiếp tục ignore DuLieuNguon.
+- Chrome/Playwright tại 1366×900, 768×900, 390×900, 320×900: ảnh local tải được, đúng tỷ lệ vuông; float:right, cạnh trên/phải ảnh trùng cạnh trên/phải cột trái; khung desktop 860px, Grid đo 381.5px / 1px / 381.5px. Mobile chuyển một cột; không tràn ngang hoặc lỗi JavaScript. Đã xem ảnh chụp desktop/mobile.
+- Đã đối chiếu h1 và dải phụ, màu #C8102E/#FBE3E8, padding 14px/7px, chữ trắng/đỏ và font-weight:700. Đủ ba mục và nội dung 200ml/400ml, điều kiện đối tượng, thời hạn 15/06/2005 → 17h ngày 12/08/2005, trước 31/07/2005 theo dấu bưu điện. Không thay ngày tháng bằng dữ liệu mới.
+- Mục lục có link ex07, mọi link local tồn tại. Chỉ commit sản phẩm ex07 và tài liệu quản lý; không đưa PDF đề, CV hoặc BoSung gốc lên Git, không sửa mã các bài khác, không thao tác nộp LMS.
+- Hiện không còn tài nguyên bắt buộc đang thiếu cho ex07. Các bài ex04–ex11 đã có sản phẩm hoàn thiện theo phạm vi đã chốt; ex01–ex03 giữ nguyên và đã được Hà xác nhận nộp lại trước đó.
