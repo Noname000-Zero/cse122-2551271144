@@ -9,15 +9,15 @@ Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy t
 | ex04 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác ảnh gốc PDF | Thuộc đợt commit/push này |
 | ex05 | Đã kiểm tra, có ảnh thật do Hà bổ sung; khác Rose.gif gốc | Thuộc đợt commit/push này |
 | ex06 | Đã kiểm tra, đủ 8 món và có ảnh thật do Hà bổ sung; khác Bat.gif gốc | Thuộc đợt commit/push này |
-| ex09 | Đã cá nhân hóa từ CV và kiểm tra local; chờ duyệt thông tin công khai | Chưa commit/push, vẫn ignore |
+| ex09 | Đã cập nhật giới thiệu và 5 dự án theo xác nhận của Hà; kiểm tra local, chờ duyệt | Chưa commit/push, vẫn ignore |
 | ex10 | Đã kiểm tra đủ yêu cầu HTML5 Form và mô phỏng gửi/reset | Đã có trên GitHub; không sửa mã trong đợt này |
-| ex11 | Đã tích hợp và kiểm tra 5 ảnh; còn thiếu ảnh đúng Động Phong Nha | Chưa hoàn thành, chưa commit/push, vẫn ignore |
+| ex11 | Đã kiểm tra đủ 6 ảnh theo danh thắng và thứ tự, nguồn ảnh 6 có ghi công | Thuộc đợt commit/push hiện tại |
 
 “Đã kiểm tra” là kết quả kiểm tra sản phẩm; không phải xác nhận chấm đạt hay đã nộp LMS. ex04–ex06 dùng ảnh bổ sung khác ảnh gốc nên không khẳng định khớp từng điểm ảnh của mẫu. Giữ nguyên bố cục và kỹ thuật theo đề, không đổi thiết kế.
 
 ## Kiểm kê và bảo toàn tài nguyên
 
-Đã mở đủ 9 ảnh trong BoSung và đọc CV PDF. Sao chép 8 ảnh vào sản phẩm, giữ định dạng thật, không chỉ đổi đuôi tệp. Đã so hash toàn bộ đầu vào hiện hữu trước khi cập nhật tài liệu quản lý: không thay đổi tệp đề, CV, ảnh hoặc README BoSung. Sau đó chỉ cập nhật DuLieuNguon/README.md để phản ánh tài liệu đã nhận; tạo thêm publication-review.md local cho Hà duyệt ex09. Không di chuyển nguồn.
+Đã mở đủ 9 ảnh trong BoSung và đọc CV PDF. Sao chép 8 ảnh Hà cung cấp vào sản phẩm, giữ định dạng thật; bổ sung 1 ảnh Động Phong Nha có mô tả tác giả và giấy phép từ Wikimedia Commons. Đã so hash toàn bộ đầu vào hiện hữu trước khi cập nhật tài liệu quản lý: không thay đổi tệp đề, CV, ảnh hoặc README BoSung. Sau đó chỉ cập nhật DuLieuNguon/README.md để phản ánh tài liệu đã nhận; tạo thêm publication-review.md local cho Hà duyệt ex09. Không di chuyển nguồn.
 
 | Đầu vào trong DuLieuNguon | Bản sao trong sản phẩm |
 | --- | --- |
@@ -30,7 +30,7 @@ Tiếp tục trên bản nháp, không làm lại từ đầu. Đã đọc quy t
 | ex11/BoSung/dinh-nui-fansipan.jpg | ex11/images/4-fansipan.jpg |
 | ex11/BoSung/images (2).jpg | ex11/images/5-mekong.jpg |
 
-Tệp 7-cai-nhat-cua-phong-nha-ke-bang-1639936654793597781412.jpg cùng cảnh cửa hang với ảnh Sơn Đoòng; tên Phong Nha–Kẻ Bàng không đủ xác nhận là Động Phong Nha. Không gán nhầm địa danh để đủ sáu ảnh. Cần bổ sung ảnh đúng Động Phong Nha vào H:\HocTap\NhiemVuHeThong\Cac_Bai_Tap\cse122-2551271144\DuLieuNguon\ex11\BoSung. Các ảnh cung cấp được sử dụng trong phạm vi bài học theo yêu cầu Hà; chưa xác minh độc lập bản quyền/nguồn xuất xứ của từng ảnh từ Internet.
+Ảnh mới images.jpg trong BoSung đã được mở và kiểm tra; chưa xác minh được địa danh độc lập từ nguồn tệp nên không dùng để gán chú thích Động Phong Nha. Giữ nguyên ảnh mới (đã so SHA-256 trước/sau). Ảnh 6 hiện dùng Phong nha cave.jpg của Tonguc Ozluk, nguồn https://commons.wikimedia.org/wiki/File:Phong_nha_cave.jpg, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. Dùng thumbnail 1280×854, không chỉnh sửa nội dung tệp, cắt hiển thị bằng CSS; ghi công và giấy phép ngay dưới gallery và trong ex11/README.md. Không khẳng định ảnh người dùng bổ sung sai địa danh khi chưa có đủ căn cứ. Các ảnh cung cấp được sử dụng trong phạm vi bài học theo yêu cầu Hà; chưa xác minh độc lập bản quyền/nguồn xuất xứ của từng ảnh từ Internet.
 
 ## Kiểm tra thực tế
 
@@ -96,13 +96,22 @@ CV là nguồn tự khai do Hà cung cấp, chưa xác minh độc lập các nh
 | Sáu figure/figcaption | Đạt cấu trúc và văn bản: Vịnh Hạ Long, Hang Sơn Đoòng, Thác Bản Giốc, Fansipan, Đồng bằng sông Cửu Long, Động Phong Nha đúng thứ tự, đánh số 1–6 |
 | Grid ba cột, gap 18px | Đạt: desktop khung 1000px, ba cột khoảng 321.33px; 3×2 hàng; gap 18px. Mobile một cột |
 | Nền và figure | Đạt: body #0F172A, chữ #E2E8F0; figure #1E293B, margin:0, bo 10px |
-| Ảnh thật | 5/6 ảnh tải được; đo từng ảnh cao 170px, rộng theo cột, object-fit:cover và display:block; không kéo méo. Ảnh Fansipan đã có chữ/logo trong nguồn, giữ nguyên |
-| Vị trí thứ sáu | Chưa đạt: còn vùng chờ Động Phong Nha, không gán nhầm ảnh Sơn Đoòng. Không coi vùng chờ là ảnh hoàn chỉnh |
+| Ảnh thật | Đạt: 6/6 ảnh tải được, đường dẫn đúng thứ tự 1–6; đo từng ảnh cao 170px, rộng theo cột, object-fit:cover và display:block; không kéo méo. Giữ nguyên chữ/logo có sẵn trên ảnh Fansipan |
+| Vị trí thứ sáu | Đạt: ảnh cửa Động Phong Nha có nguồn tác giả mô tả rõ địa danh, có ghi công CC BY-SA 4.0; không còn vùng chờ. object-position:center 70% giữ cửa động trong khung cắt |
 
 ## Giới hạn và bước còn lại
 
 - ex04–ex06 đạt kiểm tra mã, nội dung và ảnh mới cung cấp; không đạt mức ảnh trùng tuyệt đối với mẫu PDF. Nếu giảng viên bắt buộc đúng ảnh gốc, cần bộ ảnh gốc tương ứng.
 - ex09 chờ duyệt thông tin công khai; TryHackMe đang giới hạn truy cập kiểm tra (HTTP 429). Bản local đã sẵn để xem.
-- ex11 chờ một ảnh đúng Động Phong Nha; các phần độc lập và 5 ảnh đã hoàn thiện local. Khi có ảnh, thay vùng chờ, kiểm tra lại cả desktop/mobile rồi mới bỏ ignore và push.
+- ex11 đã đủ sáu ảnh và được bỏ ignore riêng bài để đồng bộ; nguồn ảnh 6 và giới hạn nhận diện ảnh mới được ghi rõ phía trên.
 - Mới kiểm tra Chrome ở ba kích thước nêu trên; chưa thử mọi trình duyệt/thiết bị, chưa có kết quả chấm LMS.
 - Đề/CV gốc, README BoSung và ghi chú duyệt cá nhân không nằm trong commit. ex01–ex03, BTTH01, bai01–bai03 giữ nguyên; ex07–ex08 chưa có đề, không thực hiện; không thao tác LMS.
+
+## Bổ sung đã kiểm tra trong đợt cập nhật ex11 và CV
+
+- Mở ảnh mới trong BoSung; dùng ảnh Phong Nha có nguồn địa danh/giấy phép rõ ràng thay vì khẳng định danh tính của ảnh chưa xác minh. Đã xem lại cả sáu ảnh trên trang theo thứ tự Vịnh Hạ Long → Sơn Đoòng → Thác Bản Giốc → Fansipan → Đồng bằng sông Cửu Long → Động Phong Nha.
+- Ex11: thử lại Chrome 1366×900, 768×900, 390×900; đủ sáu figure/img/figcaption, không vùng chờ, tất cả ảnh tải được, cao đúng 170px/cover, gap 18px, ba cột desktop và một cột mobile; xem ảnh chụp desktop/mobile, không tràn ngang.
+- Ex09 local: giữ khung 860px, cột trái 280px, avatar CSS và năm chip. Bổ sung một mục dự án gồm đúng năm liên kết repository, vẫn là một trang CV, không thêm thư viện hoặc trang con. Đã kiểm tra ba viewport, không tràn ngang.
+- Đã đọc metadata và README công khai: Quangbk47/acid-base-titration-simulator; Noname000-Zero/classical-cryptography-learning-lab; Noname000-Zero/cse122-physicssim; Noname000-Zero/konoha-network-academy; README bộ sưu tập CSE122 hiện hành. URL đều truy xuất được bằng GitHub API; không suy năng lực cá nhân từ ngôn ngữ hoặc chủ sở hữu repo. README là căn cứ mô tả sản phẩm; phần đóng góp cá nhân dựa xác nhận của Hà.
+- Giới thiệu CV nêu rõ AI hỗ trợ triển khai, Hà xác định yêu cầu, kiểm tra kết quả và điều chỉnh. Dự án chuẩn độ và PhysicsSim ghi là dự án nhóm; không nhận dự án Quangbk47 là cá nhân. Không thêm thành tích/số người dùng/số liệu mới, không tuyên bố thành thạo ngôn ngữ.
+- Nội dung thay đổi và thông tin công khai dự kiến được lưu local trong publication-review.md để Hà xem trước. Ex09 tiếp tục bị ignore, không được commit/push cùng ex11. CV PDF gốc ngoài Git.
